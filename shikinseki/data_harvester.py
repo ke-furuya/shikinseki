@@ -16,8 +16,9 @@ data_harvester.py — 品質ゲート付き汎用データ収集エンジン。
 
 依存：標準ライブラリのみ。fetch は差し替え可能（HTTP/ブラウザ貼付/ローカル何でも）。
 """
-import json, time, urllib.request, urllib.error
+import json, time, urllib.parse, urllib.request, urllib.error
 from collections import Counter
+from typing import Any, Callable, Dict, Optional, Sequence, Union
 
 __all__ = ["dig", "apply_code_map", "map_record", "http_json", "harvest",
            "completeness_gate"]
@@ -30,7 +31,7 @@ __all__ = ["dig", "apply_code_map", "map_record", "http_json", "harvest",
 #   "code_maps":      {field: {raw: clean, ...}},  生コード→値。未マップは "?"（要マップ更新の合図）
 # }
 
-def dig(raw, path):
+def dig(raw: Any, path: Union[str, Sequence]) -> Any:
     """ネストした生データを path（キー列）で辿る。'a.b.0' でも ['a','b',0] でも可。"""
     if isinstance(path, str):
         path = [int(p) if p.isdigit() else p for p in path.split(".")]
@@ -43,7 +44,7 @@ def dig(raw, path):
     return cur
 
 
-def apply_code_map(value, code_map):
+def apply_code_map(value: Any, code_map: Dict[str, str]) -> Optional[str]:
     """生コードをマップ変換。未知コードは '?'+元値 で可視化（ゲートが検出する）。"""
     if value is None:
         return None
@@ -51,7 +52,8 @@ def apply_code_map(value, code_map):
     return code_map.get(key, "?" + key)
 
 
-def map_record(raw, field_spec, code_maps=None):
+def map_record(raw: Any, field_spec: Sequence[tuple],
+               code_maps: Optional[Dict[str, dict]] = None) -> dict:
     """raw → きれいな dict。
     field_spec: list[(out_name, path, code_map_name_or_None)]"""
     code_maps = code_maps or {}
@@ -67,15 +69,19 @@ def map_record(raw, field_spec, code_maps=None):
 
 
 # ── 1. 収集ループ（部分失敗に頑健）──
-def http_json(url, headers=None, timeout=20):
-    """既定の fetch：HTTP GET で JSON を返す。
-    注意: 信頼できないURLを渡さない（urllibはfile://等も開ける＝SSRF/ローカル読み取りの恐れ）。http(s)限定を推奨。"""
+def http_json(url: str, headers: Optional[dict] = None, timeout: float = 20) -> Any:
+    """既定の fetch：HTTP GET で JSON を返す。http(s) 以外のスキームは拒否
+    （urllibはfile://等も開ける＝SSRF/ローカル読み取りの恐れがあるため、警告でなくコードで止める）。"""
+    scheme = urllib.parse.urlsplit(url).scheme
+    if scheme not in ("http", "https"):
+        raise ValueError(f"http/https以外のスキームは拒否: {scheme!r}（SSRF/ローカル読み取り防止）")
     req = urllib.request.Request(url, headers=headers or {"accept": "application/json"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return json.loads(r.read().decode("utf-8"))
 
 
-def harvest(entities, fetch_fn, retries=2, pause=0.0, on_progress=None):
+def harvest(entities: Sequence[Any], fetch_fn: Callable[[Any], Any], retries: int = 2,
+            pause: float = 0.0, on_progress: Optional[Callable] = None) -> Dict[str, Any]:
     """entities: list[任意のキー（id/パラメータ）]。
     fetch_fn(entity) -> 生データ（dict）。例外時は retries 回まで再試行。
     返り値: {str(entity): 生データ or {'_error': '...'}}。1件失敗しても全体は止まらない。"""
@@ -99,7 +105,8 @@ def harvest(entities, fetch_fn, retries=2, pause=0.0, on_progress=None):
 
 
 # ── 3. 完全性ゲート（収集の品質を採点前に保証する）──
-def completeness_gate(records, schema, expected_ids=None, label="records"):
+def completeness_gate(records: Dict[str, dict], schema: dict,
+                      expected_ids: Optional[Sequence] = None, label: str = "records") -> dict:
     """records: {id: きれいなdict（map_record後）}。schema: 上記の辞書。
     expected_ids: 取れているべきid集合（あれば未収集/余分を突合）。
     欠損があれば PASS=False。下流に進ませないための pre-flight。"""

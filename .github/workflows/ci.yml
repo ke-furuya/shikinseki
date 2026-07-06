@@ -5,12 +5,22 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: read  # テスト実行のみ＝GITHUB_TOKENは読み取りで十分
+
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10  # 実測は全体10秒未満＝ハング保険
     strategy:
+      fail-fast: false  # どのバージョンで割れたかを全部見る
       matrix:
-        python-version: ["3.8", "3.11", "3.12"]
+        include:
+          # 3.8 は ubuntu-24.04(latest) に setup-python のビルドが無いため 22.04 固定
+          - { python-version: "3.8", os: ubuntu-22.04 }
+          - { python-version: "3.11", os: ubuntu-latest }
+          - { python-version: "3.12", os: ubuntu-latest }
+          - { python-version: "3.13", os: ubuntu-latest }
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -19,11 +29,14 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Run regression tests (standard library only, no deps)
         run: python -m unittest discover tests -v
-      - name: Smoke-run all examples
+      - name: edge-validator examples
         run: |
           python edge-validator/example_advanced.py
           python edge-validator/example_sequential.py
+      - name: data-harvester / leak-guard / action-gate examples
+        run: |
           python data-harvester/example_mock.py
           python leak-guard/example_leak.py
           python action-gate/example_ops.py
-          python ai-eval-sentiment/run_eval.py
+      - name: ai-eval-sentiment (saved predictions, no API)
+        run: python ai-eval-sentiment/run_eval.py
