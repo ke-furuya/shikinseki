@@ -65,6 +65,8 @@ def main():
     print("判定: " + ("✅ Bが頑健に良い（90%CIが0をまたがない）"
                     if gap["robust_positive"]
                     else "⚠️ まぐれと区別できない（90%CIが0をまたぐ）"))
+    # CI用の回帰固定：READMEの主張「N=110の手ラベルでB−AのCIが0を除外」そのものを固定する
+    assert gap["robust_positive"], f"回帰: B−AのCIが0を除外しなくなった gap={gap}"
 
     # 検出力：観測差を使うpost-hoc powerは避け、『事前に決めた最小効果(MDE)』で必要Nを出す
     MDE = 0.05  # 事前指定：5pp以上の改善を「意味あり」とみなす（観測差は使わない）

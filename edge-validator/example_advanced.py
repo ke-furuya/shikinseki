@@ -32,7 +32,8 @@ noise_psrs = [ev.probabilistic_sharpe_ratio([rng.gauss(0, 1) for _ in range(T)])
               for _ in range(50)]
 mean_noise = sum(noise_psrs) / len(noise_psrs)
 print(f"PSR: 本物エッジ={psr_real['psr']*100:.1f}%  ノイズ50本平均={mean_noise*100:.1f}%（≈50%＝無意味）")
-assert psr_real["psr"] > 0.9 and mean_noise < 0.7
+assert psr_real["psr"] > 0.9, psr_real   # 分割＋値付き＝落ちたとき原因が見える
+assert mean_noise < 0.7, mean_noise
 
 trial_srs = [ev.sharpe(s) for s in noise] + [ev.sharpe(real)]    # 21本試した中の最良扱い
 dsr = ev.deflated_sharpe_ratio(real, trial_srs)
