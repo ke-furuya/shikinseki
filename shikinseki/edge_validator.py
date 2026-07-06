@@ -106,7 +106,7 @@ def roi_ci(records, iters=2000, seed=42):
     lo, hi = _bootstrap(groups, roi_of, iters, seed)
     hits = sum(1 for r in acted if r.get("payoff", r.get("outcome", 0)) > 0)
     # ⚠️ percentile直取り＝BCa補正なし。右に歪んだ重裾（ROI等）では区間がやや狭め＝下限が
-    #    楽観側に寄る（名目90%が実被覆で数%下振れ）。厳密判定には bootstrap_method="basic" を使う。
+    #    楽観側に寄る（名目90%が実被覆で数%下振れ）。BCa/basic補正は今後の課題（READMEの限界に明記）。
     return {"roi": point, "ci_low": lo, "ci_high": hi, "n": len(acted),
             "n_groups": len(groups), "reliable": len(groups) >= MIN_GROUPS,
             "hits": hits, "robust_positive": (lo is not None and lo >= 100),
@@ -168,7 +168,7 @@ def confidence_sequence(values, alpha=0.10, sigma=None, rho=0.5):
 def sequential_scan(values, alpha=0.10, sigma=None, rho=0.5, min_n=20, step=10):
     """到着順に min_n から step ごとに CS を再計算し、初めて 0 を外した（=決着した）
     時点 crossed_at を返す。CS が誤り率を保証するので『増やしながら覗いて、外れたら止める』が安全。"""
-    xs = [v for v in values if v is not None]
+    xs = [v for v in values if _finite(v)]
     checkpoints, crossed_at = [], None
     n = min_n
     while n <= len(xs):
@@ -260,8 +260,10 @@ def _fit_calibration(records, nbins=15, value_key="outcome"):
     for i, r in enumerate(rs):
         tmp[min(nbins - 1, i * nbins // n)].append((r["baseline"], r.get(value_key, 0)))
     cuts, binrate = [], {}
-    for b in sorted(tmp):
-        binrate[b] = statistics.mean(v for _, v in tmp[b])
+    # binrate のキーは cuts の位置（0..len-1）で揃える。n<nbins だと bin番号が飛ぶため、
+    # bin番号をキーにすると _apply_calibration の参照がずれる（旧バグ・回帰テストあり）。
+    for j, b in enumerate(sorted(tmp)):
+        binrate[j] = statistics.mean(v for _, v in tmp[b])
         cuts.append(max(bl for bl, _ in tmp[b]))
     return cuts, binrate
 
@@ -271,14 +273,14 @@ def _apply_calibration(records, cuts, binrate, value_key="outcome"):
     呼び出し側の records は汚さない（純粋関数）。baseline欠損の行は除外。"""
     if not cuts:
         return []
-    last = max(binrate)
+    last = len(cuts) - 1
     out = []
     for r in records:
         if r.get("baseline") is None:
             continue
         rr = dict(r)  # copy＝in-placeしない
         b = next((i for i, c in enumerate(cuts) if r["baseline"] <= c), last)
-        rr["_resid"] = r.get(value_key, 0) - binrate.get(min(b, last), 0)
+        rr["_resid"] = r.get(value_key, 0) - binrate[b]
         out.append(rr)
     return out
 
@@ -362,7 +364,8 @@ def multiple_comparison_note(n_tests, z=2.5):
 def leak_check(records, entity_key="entity", time_key="time"):
     """同一エンティティ（馬/銘柄/ユーザー等）が、ある時点より後に『良い結果で再登場』する場合、
     過去レコードのsignal付けに未来の知識が混入し得る（=リーク）候補としてフラグ。
-    完全自動判定は不可。H/M/L候補を出して人手レビューを絞る用途。"""
+    完全自動判定は不可。H/M候補を出して人手レビューを絞る簡易版
+    （H/M/L?/L の4分級・昇格判定つきの完全版は leak_guard.reappearance_flags）。"""
     seen = defaultdict(list)
     for r in records:
         ent = r.get(entity_key)
@@ -443,7 +446,7 @@ def sharpe(values):
 
 def probabilistic_sharpe_ratio(values, sr_benchmark=0.0):
     """PSR：真のSharpeが sr_benchmark を超える確率（歪度・尖度・標本長で補正）。"""
-    xs = [v for v in values if v is not None]
+    xs = [v for v in values if _finite(v)]
     n = len(xs)
     if n < 3:
         return None
@@ -457,8 +460,8 @@ def probabilistic_sharpe_ratio(values, sr_benchmark=0.0):
 def deflated_sharpe_ratio(values, trial_sharpes):
     """DSR：多数の戦略を試した中での最良が本物の確率（Bailey & López de Prado 2014）。
     trial_sharpes＝試した全戦略のSharpe一覧（＝選択バイアスの源）。試行が多いほど厳しく割り引く。"""
-    xs = [v for v in values if v is not None]
-    srs = [s for s in trial_sharpes if s is not None]
+    xs = [v for v in values if _finite(v)]
+    srs = [s for s in trial_sharpes if _finite(s)]
     N = len(srs)
     if len(xs) < 3 or N < 2:
         return None
@@ -540,9 +543,9 @@ def staged_scan(records, feature_specs, estimand="", nbins=15, value_key="outcom
         return {"estimand": estimand, "note": "時点が3未満で3分割不可",
                 "confirmed": [], "table": []}
     t1, t2 = times[len(times) // 3], times[2 * len(times) // 3]
-    disc0 = [r for r in records if r.get("time") and r["time"] < t1]
-    val0 = [r for r in records if r.get("time") and t1 <= r["time"] < t2]
-    conf0 = [r for r in records if r.get("time") and r["time"] >= t2]
+    disc0 = [r for r in records if r.get("time") is not None and r["time"] < t1]
+    val0 = [r for r in records if r.get("time") is not None and t1 <= r["time"] < t2]
+    conf0 = [r for r in records if r.get("time") is not None and r["time"] >= t2]
     cuts, binrate = _fit_calibration(disc0, nbins, value_key)
     disc = _apply_calibration(disc0, cuts, binrate, value_key)  # _resid付きコピー（元は汚さない）
     val = _apply_calibration(val0, cuts, binrate, value_key)
