@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shikinseki"
+version = "0.1.0"
+description = "その数字は本物か、まぐれか — 統計で見分ける定量検証ツールキット（標準ライブラリのみ・依存なし）"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = ["statistics", "bootstrap", "confidence-interval", "power-analysis",
+            "overfitting", "backtest", "ab-testing", "llm-evaluation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Intended Audience :: Developers",
+]
+dependencies = []  # 標準ライブラリのみ＝依存ゼロ
+
+[project.urls]
+Homepage = "https://github.com/ke-furuya/shikinseki"
+
+[tool.setuptools]
+packages = ["shikinseki"]

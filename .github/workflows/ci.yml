@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run regression tests (standard library only, no deps)
+        run: python -m unittest discover tests -v
+      - name: Smoke-run all examples
+        run: |
+          python edge-validator/example_advanced.py
+          python edge-validator/example_sequential.py
+          python data-harvester/example_mock.py
+          python leak-guard/example_leak.py
+          python action-gate/example_ops.py
+          python ai-eval-sentiment/run_eval.py
