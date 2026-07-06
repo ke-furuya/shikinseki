@@ -68,8 +68,8 @@ def map_record(raw, field_spec, code_maps=None):
 
 # ── 1. 収集ループ（部分失敗に頑健）──
 def http_json(url, headers=None, timeout=20):
-    # 注意: 信頼できないURLを渡さない（urllibはfile://等も開ける＝SSRF/ローカル読み取りの恐れ）。http(s)限定を推奨。
-    """既定の fetch：HTTP GET で JSON を返す。"""
+    """既定の fetch：HTTP GET で JSON を返す。
+    注意: 信頼できないURLを渡さない（urllibはfile://等も開ける＝SSRF/ローカル読み取りの恐れ）。http(s)限定を推奨。"""
     req = urllib.request.Request(url, headers=headers or {"accept": "application/json"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return json.loads(r.read().decode("utf-8"))

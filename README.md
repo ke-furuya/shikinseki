@@ -24,7 +24,7 @@
 ### インストール / 30秒で確かめる
 ```bash
 pip install -e .                             # 依存ゼロ（標準ライブラリのみ）
-python3 -m unittest discover tests           # 回帰テスト29件（ツール自身が壊れてないかの回帰確認）
+python3 -m unittest discover tests           # 回帰テスト30件（ツール自身が壊れてないかの回帰確認）
 python3 edge-validator/example_advanced.py   # 検証エンジンの全機能を自己検証つきで
 ```
 インストールなしでも動く（各スクリプトがリポジトリルートを自動でパスに追加）。古い pip で editable install が失敗する場合は最初の行を飛ばしてよい（依存ゼロなので実害なし）。使うときは `from shikinseki import edge_validator as ev`。
@@ -47,7 +47,7 @@ FAL_KEY=<key> python3 ai-eval-sentiment/run_eval_realapi.py openai/gpt-4o-mini
 ## テスト（検証ツール自身を検証する）
 
 「本物か、まぐれか」を判定するツールが壊れていては本末転倒なので、`edge_validator` の主要関数には
-**既知の答え・統計的性質で確認する回帰テスト29件**を用意している（標準ライブラリ `unittest` のみ・追加依存なし・CIで自動実行）。
+**既知の答え・統計的性質で確認する回帰テスト30件**を用意している（標準ライブラリ `unittest` のみ・追加依存なし・CIで自動実行）。
 
 ```bash
 python3 -m unittest discover tests -v
@@ -56,8 +56,9 @@ python3 -m unittest discover tests -v
 例：正規CDF/PPFは数学の教科書値と照合、Cohen's κは完全一致/完全不一致で±1.0、
 confidence sequence は「真値0を1000回引いて偽陽性率<5%（＝覗き見しても誤検出しない）」を実測、
 PBO は純ノイズ戦略で高く・本物のエッジ1本で低く出ることを確認する。
-回帰テストには「単一要素で誤って"有意"と言わない」「scan系が渡したデータを汚さない」など、
-過去に自分で見つけたバグの再発防止テストも含む（29件）。
+回帰テストには「単一要素で誤って"有意"と言わない」「scan系が渡したデータを汚さない」
+「較正のfit集合が小さくてもbinの参照がずれない」など、
+過去に自分で見つけたバグの再発防止テストも含む（30件）。
 
 ## 看板機能（edge-validator）が答える問い
 
@@ -122,7 +123,7 @@ N=110  B−A +7.3pp  90%CI +2.7〜+11.8pp → ✅ 良く見える（※ただし
 shikinseki/        パッケージ本体（4モジュール・pip install -e . で使える）
   edge_validator.py   ③検証（看板）   data_harvester.py  ①取得
   leak_guard.py       ②防御           action_gate.py     ④運用
-tests/             回帰テスト29件（CIで自動実行）
+tests/             回帰テスト30件（CIで自動実行）
 examples は各層のディレクトリ（edge-validator/ 等）に、実適用例は ai-eval-sentiment/ に。
 ```
 

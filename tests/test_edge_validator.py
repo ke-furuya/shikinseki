@@ -149,6 +149,18 @@ class TestNoMutation(unittest.TestCase):
             self.assertEqual(r, b)
 
 
+class TestCalibrationSparseBins(unittest.TestCase):
+    """【回帰】較正のfit集合が nbins 未満でも binrate の参照がずれないこと
+    （旧バグ：bin番号が飛ぶと _apply_calibration が欠番を引き、_resid が『outcome−0』になった）。"""
+
+    def test_apply_matches_fit_when_bins_sparse(self):
+        # fit側8件 < nbins=15 ＝ bin番号が飛ぶ。outcomeは全て1 → fit自身への適用残差は厳密に0のはず
+        fit = [{"group": f"g{i}", "baseline": i / 10, "outcome": 1} for i in range(8)]
+        cuts, binrate = ev._fit_calibration(fit, nbins=15)
+        for r in ev._apply_calibration(fit, cuts, binrate):
+            self.assertAlmostEqual(r["_resid"], 0.0, places=9)
+
+
 class TestNaNHandling(unittest.TestCase):
     """【回帰】NaN/Infが黙って平均に伝播しないこと。"""
 
