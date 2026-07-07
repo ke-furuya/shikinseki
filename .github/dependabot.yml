@@ -1,0 +1,7 @@
+# GitHub Actions の更新を自動監視（依存はstdlibのみ＝pip監視は不要）
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
