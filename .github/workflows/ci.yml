@@ -40,3 +40,8 @@ jobs:
           python action-gate/example_ops.py
       - name: ai-eval-sentiment (saved predictions, no API)
         run: python ai-eval-sentiment/run_eval.py
+      - name: ai-eval-logtriage (saved predictions, no API)
+        run: |
+          python ai-eval-logtriage/run_eval_logtriage.py google/gemini-2.5-flash-lite
+          python ai-eval-logtriage/run_eval_logtriage.py openai/gpt-4o-mini
+          python ai-eval-logtriage/run_eval_logtriage.py meta-llama/llama-3.2-3b-instruct
