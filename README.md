@@ -121,11 +121,18 @@ N=110  B−A +7.3pp  90%CI +2.7〜+11.8pp → ✅ 良く見える（※ただし
 
 **冒頭の+7.3ppは対話セッションでの手採点（＝身内採点）。それを疑って独立3モデルの実APIで測り直すと、頑健な改善はどこにも無く、唯一はっきり出たのは"弱いモデルでの悪化"だった。** 点推定は嘘をつき、集計は効き所を隠し、効果はモデル固有で符号すら保存されない。詳細と限界（Llamaの悪化は失敗4件を除くと有意ぎりぎり等）は [ai-eval-sentiment/README.md](ai-eval-sentiment/README.md)。
 
+## 実適用の第2例（[ai-eval-logtriage](ai-eval-logtriage/)）— 今度は3モデル一貫で"本物"だった
+
+実スパコンログ（BGL・公開実データ）の障害トリアージ。**素朴にLLMを投げると正規表現1本のキーワードルール（57.7%）に3モデルとも負け**（40〜49%）、ドメイン知識を載せたプロンプトは**3モデル全てでルールに頑健勝ち**（B−ルール +10〜+17pp・90%CIが0を除外）。効き所は「FATALと書いてあるが対応不要なダンプ行」の誤報止め（+41〜+76pp）。
+
+感情分析（符号反転）と並べると教訓が完成する：**プロンプト改善は「効かない」でも「効く」でもなく、タスク×モデル固有——符号反転もあれば3モデル一貫の本物もある。どちらかは測るまで分からない。だから測る。** 限界（alert層の見逃し増の兆候は検出力不足で判定保留等）は [ai-eval-logtriage/README.md](ai-eval-logtriage/README.md)。
+
 ## 正直な限界（隠さないのが流儀）
 
 **適用範囲**
-- ドメイン非依存は、まだ競馬（実データ）＋感情分析でしか検証していない。第2の実ドメインが次の宿題。
+- ドメイン非依存の実証＝競馬（実データ）・感情分析（手作り110件）・実スパコンログの障害トリアージ（BGL・公開実データ）。さらに異質なドメイン（数値時系列・因果推論寄りの施策効果等）は未検証。
 - 感情分析実験の限界：テストセットは手作り110件で実運用分布ではない／強モデルには易しすぎて天井（Geminiの99.1%）／Llamaの−9.1ppには出力フォーマット崩れ4件を含む（詳細は [ai-eval-sentiment](ai-eval-sentiment/) に明記）。主張は個別数値でなく構造。
+- ログトリアージ実験の限界：層別オーバーサンプリングのため正解率は実運用値でない／alert層（見逃し側）はテンプレ15種で判定保留（詳細は [ai-eval-logtriage](ai-eval-logtriage/) に明記）。
 
 **統計手法の既知の限界**（＝プロなら突く点を、こちらから先に開示する）
 - **percentile ブートストラップ**（roi_ci/mean_ci）は BCa 補正なし。右に歪んだ重裾（ROI等）では区間がやや狭く、名目90%が実被覆で数%下振れする（自前シミュレーションで G=30 のとき実測 ~83%）。＝下限が楽観側に寄るので、重裾データでの「頑健にプラス」は割り引いて読む。返り値に `ci_caveat` で明示。
@@ -164,9 +171,14 @@ leak detection), **edge-validator** (group bootstrap CIs, power analysis, anytim
 sequences, PBO/DSR overfitting diagnostics — the flagship), **action-gate** (deterministic action
 generation with machine-checked invariants).
 
-Case study: a "prompt improvement" that scored **+7.3pp** when self-graded turned into
+Case study 1: a "prompt improvement" that scored **+7.3pp** when self-graded turned into
 **+0.0pp (Gemini), +1.8pp (GPT-4o-mini), and −9.1pp (Llama-3.2-3B)** when re-measured via
 independent model APIs — the effect was model-specific and didn't even preserve its sign.
+
+Case study 2 (real supercomputer logs, BGL): naive LLM prompting **lost to a one-line keyword
+rule** on alert triage, while a domain-informed prompt **robustly beat the rule across all three
+models** (+10 to +17pp, 90% CI excluding zero). Same engine, opposite verdict — you don't know
+which case you're in until you measure.
 
 ```bash
 pip install -e .                             # zero dependencies

@@ -1,0 +1,809 @@
+{
+ "_model": "meta-llama/llama-3.2-3b-instruct",
+ "_prompt_A": "You are triaging supercomputer system logs. Is the following log line an actionable alert (a failure event an operator must attend to) or normal? Answer with exactly one word: alert or normal.\n\nLog line: {text}",
+ "_prompt_B": "You are an experienced SRE triaging RAS logs from a BlueGene/L supercomputer.\nDecide whether the following single log line is an actionable ALERT or NORMAL noise.\nTriage principles:\n1. Judge whether the line itself reports a failure EVENT an operator must act on.\n2. Severity FATAL does not automatically mean alert: register dumps, memory addresses and state printouts that accompany a crash are diagnostic detail, not actionable events.\n3. Hardware error interrupts, kernel panics, and I/O failures on control streams are actionable; state dumps mentioning scary words are not.\nAnswer with exactly one word: alert or normal.\n\nLog line: {text}",
+ "243": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1962": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "245": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "247": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "433": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1945": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1243": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1749": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "9": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1958": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1429": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1264": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "291": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1781": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1480": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "113": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "275": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1201": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "623": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "277": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1393": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1638": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "69": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "266": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1740": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "268": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1778": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1492": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "224": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1748": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "250": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1946": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1982": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1798": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1719": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1787": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "315": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "283": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1448": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1978": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1761": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1768": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1452": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "305": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1851": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "346": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "173": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1208": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "295": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1469": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1815": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1947": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1770": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1974": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "211": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1784": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1508": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1383": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1800": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "946": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "240": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1520": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1948": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "597": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "363": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "280": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "497": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "306": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "244": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1451": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1486": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "448": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "232": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1796": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1030": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1783": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "304": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1207": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1792": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "451": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "251": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "300": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1377": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "293": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "287": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "276": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "216": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1257": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "260": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1203": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "248": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1826": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "222": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "286": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "203": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "62": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1991": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "294": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "281": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "292": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "104": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "217": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1267": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1521": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "246": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1382": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1785": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1511": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1395": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "288": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "313": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1232": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "165": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1523": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "450": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "282": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "522": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "621": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1788": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "824": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1258": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1518": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1378": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "301": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1217": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "152": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "296": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "187": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "129": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "219": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1720": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "271": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1400": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "445": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "440": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1371": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "214": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "446": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "299": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "947": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "435": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "241": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "269": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "320": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1758": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "10": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "456": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "231": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "284": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "290": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1465": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "32": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1513": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1379": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "137": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1980": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "242": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "258": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1392": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "225": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "256": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1245": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "259": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1401": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "455": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1279": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "267": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "253": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "438": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "103": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "261": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1975": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1750": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1260": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1529": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "279": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1031": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1206": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "285": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "302": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "311": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "436": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "429": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "237": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1950": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1220": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1202": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1776": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1733": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "312": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1799": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1960": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1751": {
+  "A": "normal",
+  "B": "alert"
+ },
+ "1990": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1963": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "444": {
+  "A": "normal",
+  "B": "normal"
+ },
+ "1779": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1757": {
+  "A": "alert",
+  "B": "normal"
+ },
+ "1973": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "823": {
+  "A": "alert",
+  "B": "alert"
+ },
+ "1935": {
+  "A": "alert",
+  "B": "normal"
+ }
+}
