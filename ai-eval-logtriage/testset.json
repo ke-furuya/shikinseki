@@ -1,0 +1,1409 @@
+[
+ {
+  "id": 243,
+  "text": "1118769997 2005.06.14 R26-M0-N2-C:J05-U01 2005-06-14-10.26.37.865134 R26-M0-N2-C:J05-U01 RAS KERNEL FATAL data store interrupt caused by dcbf.........0",
+  "label": "normal",
+  "group": "E53",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1962,
+  "text": "1134117490 2005.12.09 R70-M0-N7-C:J15-U01 2005-12-09-00.38.10.632331 R70-M0-N7-C:J15-U01 RAS KERNEL INFO 1 ddr error(s) detected and corrected on rank 0, symbol 9 over 986 seconds",
+  "label": "normal",
+  "group": "E1",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 245,
+  "text": "1118770101 2005.06.14 R21-M1-N6-C:J03-U11 2005-06-14-10.28.21.217840 R21-M1-N6-C:J03-U11 RAS KERNEL FATAL program interrupt: illegal instruction......0",
+  "label": "normal",
+  "group": "E101",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 247,
+  "text": "1118770236 2005.06.14 R25-M1-N3-C:J14-U11 2005-06-14-10.30.36.559680 R25-M1-N3-C:J14-U11 RAS KERNEL FATAL program interrupt: privileged instruction...0",
+  "label": "normal",
+  "group": "E103",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 433,
+  "text": "1119802781 2005.06.26 R07-M1-N0-C:J15-U11 2005-06-26-09.19.41.368208 R07-M1-N0-C:J15-U11 RAS KERNEL INFO program interrupt",
+  "label": "normal",
+  "group": "E98",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1945,
+  "text": "1133715868 2005.12.04 R06-M1-N6-C:J08-U01 2005-12-04-09.04.28.582086 R06-M1-N6-C:J08-U01 RAS KERNEL INFO total of 1 ddr error(s) detected and corrected over 2487 seconds",
+  "label": "normal",
+  "group": "E119",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1243,
+  "text": "1123914577 2005.08.12 R61-M1-N0-I:J18-U01 2005-08-12-23.29.37.454616 R61-M1-N0-I:J18-U01 RAS APP FATAL ciod: Error loading /bgl/apps/scaletest/performance/MINIBEN/mb_243_0810/allreduce.rts: invalid or missing program image, Exec format error",
+  "label": "normal",
+  "group": "E25",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1749,
+  "text": "1132021541 2005.11.14 R46-M1-NF-C:J11-U01 2005-11-14-18.25.41.161796 R46-M1-NF-C:J11-U01 RAS KERNEL FATAL Error receiving packet on tree network, expecting type 57 instead of type 3 (softheader=00ce22e8 e6200003 00000002 00000000) PSR0=00001f01 PSR1=00000000 PRXF=00000002 PIXF=00000007",
+  "label": "alert",
+  "group": "E60",
+  "kind": "alert"
+ },
+ {
+  "id": 9,
+  "text": "1117869872 2005.06.04 R04-M1-N4-I:J18-U11 2005-06-04-00.24.32.432192 R04-M1-N4-I:J18-U11 RAS APP FATAL ciod: failed to read message prefix on control stream (CioStream socket to 172.16.96.116:33569",
+  "label": "alert",
+  "group": "E33",
+  "kind": "alert"
+ },
+ {
+  "id": 1958,
+  "text": "1133928447 2005.12.06 R37-M1-N1-C:J02-U01 2005-12-06-20.07.27.653573 R37-M1-N1-C:J02-U01 RAS KERNEL INFO Kernel detected 3945740 integer alignment exceptions (3945733) iar 0x00544ea8, dear 0x01ef7960 (3945734) iar 0x00544eb8, dear 0x01ef7980 (3945735) iar 0x00544ea8, dear 0x01ef79a0 (3945736) iar 0x00544eb8, dear 0x01ef79c0 (3945737) iar 0x00544ee0, dear 0x01ef79e0 (3945738) iar 0x00544ef0, dear 0x01ef7a00 (3945739) iar 0x00544ee0, dear 0x01ef7a20 (3945740) iar 0x00544ef0, dear 0x01ef7a40",
+  "label": "normal",
+  "group": "E78",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1429,
+  "text": "1127243379 2005.09.20 NULL 2005-09-20-12.09.39.030884 NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT expression=0 Source file=idotransportmgr.cpp Source line=1043 Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPavTrace*)",
+  "label": "normal",
+  "group": "E74",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1264,
+  "text": "1124394179 2005.08.18 R30-M0-N0-I:J18-U01 2005-08-18-12.42.59.378202 R30-M0-N0-I:J18-U01 RAS KERNEL INFO ciod: generated 64 core files for program /bgl/apps/swl-prep/ibm-swl/functional/sppm_chkpt/run/sppm",
+  "label": "normal",
+  "group": "E34",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 291,
+  "text": "1118772585 2005.06.14 R20-M1-N1-C:J10-U01 2005-06-14-11.09.45.838343 R20-M1-N1-C:J10-U01 RAS KERNEL FATAL problem state (0=sup,1=usr).......0",
+  "label": "normal",
+  "group": "E97",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1781,
+  "text": "1132609304 2005.11.21 R22-M0-N0-I:J18-U01 2005-11-21-13.41.44.752517 R22-M0-N0-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:52930, Connection reset by peer",
+  "label": "alert",
+  "group": "E30",
+  "kind": "alert"
+ },
+ {
+  "id": 1480,
+  "text": "1128597888 2005.10.06 R56-M0-N0-I:J18-U01 2005-10-06-04.24.48.021229 R56-M0-N0-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to 172.16.96.116:53591: Link has been severed",
+  "label": "alert",
+  "group": "E29",
+  "kind": "alert"
+ },
+ {
+  "id": 113,
+  "text": "1118539141 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.19.01.277745 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt",
+  "label": "alert",
+  "group": "E55",
+  "kind": "alert"
+ },
+ {
+  "id": 275,
+  "text": "1118771823 2005.06.14 R26-M1-ND-C:J05-U11 2005-06-14-10.57.03.800229 R26-M1-ND-C:J05-U11 RAS KERNEL FATAL guaranteed instruction cache block touch.0",
+  "label": "normal",
+  "group": "E69",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1201,
+  "text": "1123025540 2005.08.02 UNKNOWN_LOCATION 2005-08-02-16.32.20.358039 UNKNOWN_LOCATION NULL DISCOVERY INFO New ido chip inserted into the database: FF:F2:9F:16:BF:6C:00:0D:60:E9:40:93 ip=10.5.0.46 v=13 t=4",
+  "label": "normal",
+  "group": "E88",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 623,
+  "text": "1120909906 2005.07.09 R16-M1-NC-I:J18-U11 2005-07-09-04.51.46.753675 R16-M1-NC-I:J18-U11 RAS APP FATAL ciod: Error creating node map from file /p/gb2/pakin1/sweep3d-5x5x400-10mk-3mmi-1024pes-xyzt/xyzt.map: Block device required",
+  "label": "normal",
+  "group": "E22",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 277,
+  "text": "1118771875 2005.06.14 R20-M1-NB-C:J11-U11 2005-06-14-10.57.55.166387 R20-M1-NB-C:J11-U11 RAS KERNEL FATAL program interrupt: fp cr field .............0",
+  "label": "normal",
+  "group": "E99",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1393,
+  "text": "1126211891 2005.09.08 R63-M1-NC-I:J18-U11 2005-09-08-13.38.11.467298 R63-M1-NC-I:J18-U11 RAS KERNEL INFO ciod: pollControlDescriptors: Detected the debugger died.",
+  "label": "normal",
+  "group": "E40",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1638,
+  "text": "1131127186 2005.11.04 R62-M0-N9-C:J08-U11 2005-11-04-09.59.46.036595 R62-M0-N9-C:J08-U11 RAS KERNEL INFO 45684 floating point alignment exceptions",
+  "label": "normal",
+  "group": "E4",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 69,
+  "text": "1118112700 2005.06.06 R23-M0-N0-I:J18-U01 2005-06-06-19.51.40.376079 R23-M0-N0-I:J18-U01 RAS KERNEL INFO ciod: cpu 0 at treeaddr 438 sent unrecognized message 0xffffffff",
+  "label": "normal",
+  "group": "E19",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 266,
+  "text": "1118771330 2005.06.14 R26-M1-N6-C:J05-U01 2005-06-14-10.48.50.649332 R26-M1-N6-C:J05-U01 RAS KERNEL FATAL floating pt ex mode 1 enable......0",
+  "label": "normal",
+  "group": "E63",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1740,
+  "text": "1131680322 2005.11.10 R63-M0-N6-C:J12-U11 2005-11-10-19.38.42.369022 R63-M0-N6-C:J12-U11 RAS KERNEL FATAL rts: kernel terminated for reason 1004",
+  "label": "alert",
+  "group": "E111",
+  "kind": "alert"
+ },
+ {
+  "id": 268,
+  "text": "1118771409 2005.06.14 R20-M1-N8-C:J15-U11 2005-06-14-10.50.09.563848 R20-M1-N8-C:J15-U11 RAS KERNEL FATAL byte ordering exception.....................0",
+  "label": "normal",
+  "group": "E16",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1778,
+  "text": "1132600084 2005.11.21 R14-M0-NC-I:J18-U11 2005-11-21-11.08.04.944948 R14-M0-NC-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:41554, Connection timed out",
+  "label": "alert",
+  "group": "E31",
+  "kind": "alert"
+ },
+ {
+  "id": 1492,
+  "text": "1129204989 2005.10.13 R44-M0-N4-I:J18-U01 2005-10-13-05.03.09.377689 R44-M0-N4-I:J18-U01 RAS APP FATAL ciod: Error loading /bgl/apps/followup/SPASM/spasm.254: invalid or missing program image, Permission denied",
+  "label": "normal",
+  "group": "E26",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 224,
+  "text": "1118768186 2005.06.14 R24-M1-N6-C:J11-U01 2005-06-14-09.56.26.940016 R24-M1-N6-C:J11-U01 RAS KERNEL FATAL data address: 0x00000002",
+  "label": "normal",
+  "group": "E50",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1748,
+  "text": "1132021523 2005.11.14 R46-M1-NE-C:J14-U11 2005-11-14-18.25.23.269634 R46-M1-NE-C:J14-U11 RAS KERNEL FATAL rts: kernel terminated for reason 1004",
+  "label": "alert",
+  "group": "E111",
+  "kind": "alert"
+ },
+ {
+  "id": 250,
+  "text": "1118770603 2005.06.14 R24-M1-NE-C:J15-U11 2005-06-14-10.36.43.928442 R24-M1-NE-C:J15-U11 RAS KERNEL FATAL store operation.............................1",
+  "label": "normal",
+  "group": "E116",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1946,
+  "text": "1133721087 2005.12.04 R71-M0-N4-C:J14-U01 2005-12-04-10.31.27.742650 R71-M0-N4-C:J14-U01 RAS KERNEL FATAL minus normalized number..................0",
+  "label": "normal",
+  "group": "E87",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1982,
+  "text": "1134631019 2005.12.14 R32-M0-NC-I:J18-U01 2005-12-14-23.16.59.947676 R32-M0-NC-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:50288, Link has been severed",
+  "label": "alert",
+  "group": "E32",
+  "kind": "alert"
+ },
+ {
+  "id": 1798,
+  "text": "1133150722 2005.11.27 R15-M0-N0-I:J18-U11 2005-11-27-20.05.22.588765 R15-M0-N0-I:J18-U11 RAS KERNEL INFO ciod: Received signal 15, code=0, errno=0, address=0x000001f5",
+  "label": "normal",
+  "group": "E41",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1719,
+  "text": "1131499523 2005.11.08 R62-M0-N2-C:J09-U11 2005-11-08-17.25.23.131318 R62-M0-N2-C:J09-U11 RAS KERNEL FATAL Error receiving packet on tree network, expecting type 57 instead of type 3 (softheader=00589370 90990003 00000002 00000000) PSR0=00001f01 PSR1=00000000 PRXF=00000002 PIXF=00000007",
+  "label": "alert",
+  "group": "E60",
+  "kind": "alert"
+ },
+ {
+  "id": 1787,
+  "text": "1132841276 2005.11.24 R03-M1-NF-C:J07-U01 2005-11-24-06.07.56.407913 R03-M1-NF-C:J07-U01 RAS KERNEL FATAL dbcr0=0x00000000 dbsr=0x00000000 ccr0=0x40002000",
+  "label": "normal",
+  "group": "E56",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 315,
+  "text": "1118784453 2005.06.14 R07-M0-N6-C:J11-U01 2005-06-14-14.27.33.186273 R07-M0-N6-C:J11-U01 RAS KERNEL INFO total of 1 ddr error(s) detected and corrected",
+  "label": "normal",
+  "group": "E118",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 283,
+  "text": "1118772022 2005.06.14 R26-M0-N6-C:J14-U11 2005-06-14-11.00.22.056566 R26-M0-N6-C:J14-U11 RAS KERNEL FATAL icache prefetch depth....................0",
+  "label": "normal",
+  "group": "E71",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1448,
+  "text": "1127264516 2005.09.20 R05-M0-N1-C:J06-U11 2005-09-20-18.01.56.398119 R05-M0-N1-C:J06-U11 RAS KERNEL FATAL rts: bad message header: expecting type 57 instead of type 3 (softheader=00131db8 81aa0003 00000002 00000000) PSR0=00001f01 PSR1=00000000 PRXF=00000002 PIXF=00000007",
+  "label": "normal",
+  "group": "E110",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1978,
+  "text": "1134601394 2005.12.14 R42-M1-N2-C:J03-U11 2005-12-14-15.03.14.212440 R42-M1-N2-C:J03-U11 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x0a): warning for torus z+ wire, suppressing further interrupts of same type",
+  "label": "normal",
+  "group": "E46",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1761,
+  "text": "1132236972 2005.11.17 R72-M1-N6-C:J04-U01 2005-11-17-06.16.12.504899 R72-M1-N6-C:J04-U01 RAS KERNEL INFO 26741629 torus sender z- retransmission error(s) (dcr 0x02f9) detected and corrected over 268 seconds",
+  "label": "normal",
+  "group": "E11",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1768,
+  "text": "1132575798 2005.11.21 R04-M1-N8-I:J18-U01 2005-11-21-04.23.18.419757 R04-M1-N8-I:J18-U01 RAS KERNEL FATAL Lustre mount FAILED : bglio78 : block_id : location",
+  "label": "alert",
+  "group": "E80",
+  "kind": "alert"
+ },
+ {
+  "id": 1452,
+  "text": "1127265535 2005.09.20 R23-M1-N8-I:J18-U11 2005-09-20-18.18.55.570301 R23-M1-N8-I:J18-U11 RAS APP FATAL ciod: LOGIN chdir(/bgl/apps/SWL/performance/MINIBEN///2005.09.20-18.06.05) failed: No such file or directory",
+  "label": "normal",
+  "group": "E37",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 305,
+  "text": "1118773807 2005.06.14 R20-M1-N5-C:J13-U01 2005-06-14-11.30.07.879884 R20-M1-N5-C:J13-U01 RAS KERNEL FATAL core configuration register: 0x00002000",
+  "label": "normal",
+  "group": "E43",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1851,
+  "text": "1133448498 2005.12.01 R64-M0-N8-C:J05-U11 2005-12-01-06.48.18.151322 R64-M0-N8-C:J05-U11 RAS KERNEL INFO 0 microseconds spent in the rbs signal handler during 0 calls. 0 microseconds was the maximum time for a single instance of a correctable ddr.",
+  "label": "normal",
+  "group": "E7",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 346,
+  "text": "1118958902 2005.06.16 R32-M1-N8-I:J18-U01 2005-06-16-14.55.02.074340 R32-M1-N8-I:J18-U01 RAS APP FATAL ciod: failed to read message prefix on control stream (CioStream socket to 172.16.96.116:51706",
+  "label": "alert",
+  "group": "E33",
+  "kind": "alert"
+ },
+ {
+  "id": 173,
+  "text": "1118709851 2005.06.13 R02-M0-N0-C:J10-U01 2005-06-13-17.44.11.050768 R02-M0-N0-C:J10-U01 RAS KERNEL FATAL data storage interrupt",
+  "label": "alert",
+  "group": "E52",
+  "kind": "alert"
+ },
+ {
+  "id": 1208,
+  "text": "1123110662 2005.08.03 NULL 2005-08-03-16.11.02.839771 NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT expression=0 Source file=idotransportmgr.cpp Source line=1043 Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPavTrace*)",
+  "label": "normal",
+  "group": "E74",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 295,
+  "text": "1118772877 2005.06.14 R27-M1-N3-C:J04-U11 2005-06-14-11.14.37.821210 R27-M1-N3-C:J04-U11 RAS KERNEL FATAL lr:00004ed0 cr:28244842 xer:20000002 ctr:00086000",
+  "label": "normal",
+  "group": "E79",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1469,
+  "text": "1128027755 2005.09.29 R03-M1-ND-C:J14-U01 2005-09-29-14.02.35.872055 R03-M1-ND-C:J14-U01 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x06): warning for torus y+ wire",
+  "label": "normal",
+  "group": "E44",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1815,
+  "text": "1133447777 2005.12.01 R16-M0-N4-C:J06-U11 2005-12-01-06.36.17.847421 R16-M0-N4-C:J06-U11 RAS KERNEL INFO 0 microseconds spent in the rbs signal handler during 0 calls. 0 microseconds was the maximum time for a single instance of a correctable ddr.",
+  "label": "normal",
+  "group": "E7",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1947,
+  "text": "1133726737 2005.12.04 R46-M0-N8-I:J18-U11 2005-12-04-12.05.37.993474 R46-M0-N8-I:J18-U11 RAS KERNEL FATAL Lustre mount FAILED : bglio617 : block_id : location",
+  "label": "alert",
+  "group": "E80",
+  "kind": "alert"
+ },
+ {
+  "id": 1770,
+  "text": "1132584089 2005.11.21 R26-M0-N0-I:J18-U11 2005-11-21-06.41.29.787206 R26-M0-N0-I:J18-U11 RAS KERNEL INFO MACHINE CHECK DCR read timeout (mc=e08x iar 0x00000000 lr 0xc00045a4)",
+  "label": "normal",
+  "group": "E82",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1974,
+  "text": "1134496355 2005.12.13 R74-M1-N8-I:J18-U11 2005-12-13-09.52.35.527182 R74-M1-N8-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:55929, Link has been severed",
+  "label": "alert",
+  "group": "E32",
+  "kind": "alert"
+ },
+ {
+  "id": 211,
+  "text": "1118767942 2005.06.14 R25-M0-NB-C:J02-U11 2005-06-14-09.52.22.295234 R25-M0-NB-C:J02-U11 RAS KERNEL FATAL data storage interrupt",
+  "label": "alert",
+  "group": "E52",
+  "kind": "alert"
+ },
+ {
+  "id": 1784,
+  "text": "1132613223 2005.11.21 R16-M1-NC-I:J18-U11 2005-11-21-14.47.03.703578 R16-M1-NC-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:41060, Connection timed out",
+  "label": "alert",
+  "group": "E31",
+  "kind": "alert"
+ },
+ {
+  "id": 1508,
+  "text": "1129552512 2005.10.17 R02-M0-N4-C:J04-U11 2005-10-17-05.35.12.825443 R02-M0-N4-C:J04-U11 RAS KERNEL INFO data cache search parity error detected. attempting to correct",
+  "label": "normal",
+  "group": "E51",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1383,
+  "text": "1125694345 2005.09.02 R04-M0-NC-I:J18-U11 2005-09-02-13.52.25.806989 R04-M0-NC-I:J18-U11 RAS KERNEL FATAL Lustre mount FAILED : bglio75 : point /p/gb1",
+  "label": "alert",
+  "group": "E81",
+  "kind": "alert"
+ },
+ {
+  "id": 1800,
+  "text": "1133306285 2005.11.29 R60-M0-N4-I:J18-U01 2005-11-29-15.18.05.050463 R60-M0-N4-I:J18-U01 RAS KERNEL INFO ciod: Received signal 15, code=0, errno=0, address=0x000001f2",
+  "label": "normal",
+  "group": "E41",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 946,
+  "text": "1121383222 2005.07.14 R01-M0-N0-I:J18-U11 2005-07-14-16.20.22.672549 R01-M0-N0-I:J18-U11 RAS APP FATAL ciod: Error creating node map from file /home/pakin1/sweep3d-2.2b/results/random1-8x32x32x2.map: Permission denied",
+  "label": "normal",
+  "group": "E24",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 240,
+  "text": "1118769984 2005.06.14 R20-M1-N8-C:J08-U11 2005-06-14-10.26.24.461952 R20-M1-N8-C:J08-U11 RAS KERNEL FATAL machine check: i-fetch......................0",
+  "label": "normal",
+  "group": "E84",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1520,
+  "text": "1130529580 2005.10.28 R63-M1-NF-C:J15-U11 2005-10-28-12.59.40.203147 R63-M1-NF-C:J15-U11 RAS KERNEL FATAL rts: kernel terminated for reason 1004",
+  "label": "alert",
+  "group": "E111",
+  "kind": "alert"
+ },
+ {
+  "id": 1948,
+  "text": "1133835041 2005.12.05 R52-M1-NA-C:J03-U01 2005-12-05-18.10.41.610617 R52-M1-NA-C:J03-U01 RAS KERNEL FATAL fraction rounded.........................0",
+  "label": "normal",
+  "group": "E66",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 597,
+  "text": "1120591331 2005.07.05 R32-M0-N4-I:J18-U01 2005-07-05-12.22.11.843446 R32-M0-N4-I:J18-U01 RAS KERNEL INFO ciod: Missing or invalid fields on line 1 of node map file /home/auselton/bgl/64mps.sequential.mapfile",
+  "label": "normal",
+  "group": "E39",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 363,
+  "text": "1119319455 2005.06.20 R12-M1-NC-I:J18-U11 2005-06-20-19.04.15.002425 R12-M1-NC-I:J18-U11 RAS APP FATAL ciod: Error creating node map from file /p/gb2/cabot/miranda/newmaps/8k_128x64x1_8x4x4.map: No child processes",
+  "label": "alert",
+  "group": "E23",
+  "kind": "alert"
+ },
+ {
+  "id": 280,
+  "text": "1118771928 2005.06.14 R27-M1-N4-C:J05-U11 2005-06-14-10.58.48.336960 R27-M1-N4-C:J05-U11 RAS KERNEL FATAL guaranteed data cache block touch........1",
+  "label": "normal",
+  "group": "E68",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 497,
+  "text": "1120173883 2005.06.30 R36-M1-N4-I:J18-U01 2005-06-30-16.24.43.164196 R36-M1-N4-I:J18-U01 RAS APP FATAL ciod: Error creating node map from file /p/gb2/welcome3/32k_128x256x1_8x4x4.map: Bad file descriptor",
+  "label": "normal",
+  "group": "E21",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 306,
+  "text": "1118773808 2005.06.14 R20-M1-NA-C:J03-U01 2005-06-14-11.30.08.524358 R20-M1-NA-C:J03-U01 RAS KERNEL FATAL core configuration register: 0x00002000",
+  "label": "normal",
+  "group": "E43",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 244,
+  "text": "1118770028 2005.06.14 R20-M0-ND-C:J05-U01 2005-06-14-10.27.08.151309 R20-M0-ND-C:J05-U01 RAS KERNEL FATAL program interrupt: illegal instruction......0",
+  "label": "normal",
+  "group": "E101",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1451,
+  "text": "1127265314 2005.09.20 R27-M1-N4-I:J18-U01 2005-09-20-18.15.14.037829 R27-M1-N4-I:J18-U01 RAS APP FATAL ciod: LOGIN chdir(/bgl/apps/SWL/performance/MINIBEN///2005.09.20-18.06.05) failed: No such file or directory",
+  "label": "normal",
+  "group": "E37",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1486,
+  "text": "1128970806 2005.10.10 R05-M0-N8-I:J18-U11 2005-10-10-12.00.06.181123 R05-M0-N8-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to 172.16.96.116:57673: Link has been severed",
+  "label": "alert",
+  "group": "E29",
+  "kind": "alert"
+ },
+ {
+  "id": 448,
+  "text": "1119806939 2005.06.26 R05-M0-N7-C:J13-U01 2005-06-26-10.28.59.279042 R05-M0-N7-C:J13-U01 RAS KERNEL INFO program interrupt",
+  "label": "normal",
+  "group": "E98",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 232,
+  "text": "1118769530 2005.06.14 R27-M1-NA-C:J16-U11 2005-06-14-10.18.50.161104 R27-M1-NA-C:J16-U11 RAS KERNEL FATAL exception syndrome register: 0x00800000",
+  "label": "normal",
+  "group": "E61",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1796,
+  "text": "1133051996 2005.11.26 R03-M1-NF-C:J07-U01 2005-11-26-16.39.56.330868 R03-M1-NF-C:J07-U01 RAS KERNEL FATAL r24=0x0ffea4c8 r25=0x00000003 r26=0x0000000f r27=0xffffd000",
+  "label": "normal",
+  "group": "E106",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1030,
+  "text": "1121727206 2005.07.18 R20-M1-N8-C:J12-U01 2005-07-18-15.53.26.229596 R20-M1-N8-C:J12-U01 RAS KERNEL FATAL rts: kernel terminated for reason 1001rts: bad message header: invalid cpu, type=42315, cpu=105, index=1207960804, total=2691015",
+  "label": "alert",
+  "group": "E112",
+  "kind": "alert"
+ },
+ {
+  "id": 1783,
+  "text": "1132609342 2005.11.21 R65-M1-NC-I:J18-U11 2005-11-21-13.42.22.905034 R65-M1-NC-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:53387, Connection reset by peer",
+  "label": "alert",
+  "group": "E30",
+  "kind": "alert"
+ },
+ {
+  "id": 304,
+  "text": "1118773772 2005.06.14 R24-M1-N0-C:J04-U11 2005-06-14-11.29.32.480633 R24-M1-N0-C:J04-U11 RAS KERNEL FATAL data address space................0",
+  "label": "normal",
+  "group": "E49",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1207,
+  "text": "1123060215 2005.08.03 UNKNOWN_LOCATION 2005-08-03-02.10.15.206558 UNKNOWN_LOCATION NULL DISCOVERY SEVERE Can not get assembly information for node card",
+  "label": "normal",
+  "group": "E17",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1792,
+  "text": "1133009333 2005.11.26 R54-M0-N0-I:J18-U01 2005-11-26-04.48.53.869394 R54-M0-N0-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:60243, Link has been severed",
+  "label": "alert",
+  "group": "E32",
+  "kind": "alert"
+ },
+ {
+  "id": 451,
+  "text": "1119807051 2005.06.26 R05-M0-N6-C:J06-U11 2005-06-26-10.30.51.645473 R05-M0-N6-C:J06-U11 RAS KERNEL INFO exception syndrome register: 0x08000000",
+  "label": "normal",
+  "group": "E61",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 251,
+  "text": "1118770625 2005.06.14 R20-M0-NF-C:J07-U01 2005-06-14-10.37.05.332040 R20-M0-NF-C:J07-U01 RAS KERNEL FATAL store operation.............................1",
+  "label": "normal",
+  "group": "E116",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 300,
+  "text": "1118773424 2005.06.14 R25-M0-N2-C:J04-U11 2005-06-14-11.23.44.638394 R25-M0-N2-C:J04-U11 RAS KERNEL FATAL floating pt ex mode 1 enable......0",
+  "label": "normal",
+  "group": "E63",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1377,
+  "text": "1125552593 2005.08.31 R42-M1-NC-I:J18-U11 2005-08-31-22.29.53.058583 R42-M1-NC-I:J18-U11 RAS KERNEL FATAL Lustre mount FAILED : bglio559 : point /p/gb1",
+  "label": "alert",
+  "group": "E81",
+  "kind": "alert"
+ },
+ {
+  "id": 293,
+  "text": "1118772772 2005.06.14 R21-M0-NF-C:J09-U01 2005-06-14-11.12.52.380819 R21-M0-NF-C:J09-U01 RAS KERNEL FATAL floating point instr. enabled.....1",
+  "label": "normal",
+  "group": "E62",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 287,
+  "text": "1118772122 2005.06.14 R27-M0-N1-C:J08-U11 2005-06-14-11.02.02.749469 R27-M0-N1-C:J08-U11 RAS KERNEL FATAL icache prefetch threshold................0",
+  "label": "normal",
+  "group": "E72",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 276,
+  "text": "1118771847 2005.06.14 R26-M0-N8-C:J03-U01 2005-06-14-10.57.27.640707 R26-M0-N8-C:J03-U01 RAS KERNEL FATAL guaranteed instruction cache block touch.0",
+  "label": "normal",
+  "group": "E69",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 216,
+  "text": "1118768044 2005.06.14 R05-M1-NB-C:J07-U11 2005-06-14-09.54.04.393973 R05-M1-NB-C:J07-U11 RAS KERNEL FATAL data storage interrupt",
+  "label": "alert",
+  "group": "E52",
+  "kind": "alert"
+ },
+ {
+  "id": 1257,
+  "text": "1124071359 2005.08.14 R21-M0-N8-I:J18-U11 2005-08-14-19.02.39.467287 R21-M0-N8-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to 172.16.96.116:42213: Link has been severed",
+  "label": "alert",
+  "group": "E29",
+  "kind": "alert"
+ },
+ {
+  "id": 260,
+  "text": "1118771075 2005.06.14 R24-M0-NF-C:J09-U01 2005-06-14-10.44.35.353282 R24-M0-NF-C:J09-U01 RAS KERNEL FATAL auxiliary processor.........................0",
+  "label": "normal",
+  "group": "E15",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1203,
+  "text": "1123030687 2005.08.02 R00-M0-N2 2005-08-02-17.58.07.084868 R00-M0-N2 NULL DISCOVERY ERROR Node card status: ALERT 0, ALERT 1, ALERT 2, ALERT 3 is (are) active. Clock Mode is Low. Clock Select is Midplane. Phy JTAG Reset is asserted. ASIC JTAG Reset is not asserted. Temperature Mask is not active. No temperature error. Temperature Limit Error Latch is clear. PGOOD is asserted. PGOOD error latch is clear. MPGOOD is OK. MPGOOD error latch is clear. The 2.5 volt rail is OK. The 1.5 volt rail is OK.",
+  "label": "normal",
+  "group": "E91",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 248,
+  "text": "1118770309 2005.06.14 R20-M1-NB-C:J03-U11 2005-06-14-10.31.49.464584 R20-M1-NB-C:J03-U11 RAS KERNEL FATAL program interrupt: trap instruction.........0",
+  "label": "normal",
+  "group": "E104",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1826,
+  "text": "1133448086 2005.12.01 R37-M1-NE-C:J04-U11 2005-12-01-06.41.26.523789 R37-M1-NE-C:J04-U11 RAS KERNEL INFO 10686 total interrupts. 0 critical input interrupts. 0 microseconds total spent on critical input interrupts, 0 microseconds max time in a critical input interrupt.",
+  "label": "normal",
+  "group": "E12",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 222,
+  "text": "1118768162 2005.06.14 R25-M0-ND-C:J04-U01 2005-06-14-09.56.02.974678 R25-M0-ND-C:J04-U01 RAS KERNEL FATAL data address: 0x00000002",
+  "label": "normal",
+  "group": "E50",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 286,
+  "text": "1118772122 2005.06.14 R27-M0-N1-C:J15-U01 2005-06-14-11.02.02.534437 R27-M0-N1-C:J15-U01 RAS KERNEL FATAL icache prefetch threshold................0",
+  "label": "normal",
+  "group": "E72",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 203,
+  "text": "1118766833 2005.06.14 R24-M1-ND-C:J11-U11 2005-06-14-09.33.53.107913 R24-M1-ND-C:J11-U11 RAS KERNEL FATAL instruction address: 0x00004ed8",
+  "label": "normal",
+  "group": "E76",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 62,
+  "text": "1118080480 2005.06.06 R02-M1-N0-C:J12-U11 2005-06-06-10.54.40.382678 R02-M1-N0-C:J12-U11 RAS KERNEL INFO instruction cache parity error corrected",
+  "label": "normal",
+  "group": "E77",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1991,
+  "text": "1135602839 2005.12.26 R61-M0-N3-C:J11-U11 2005-12-26-05.13.59.265193 R61-M0-N3-C:J11-U11 RAS KERNEL FATAL Machine State Register: 0x0002f900",
+  "label": "normal",
+  "group": "E86",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 294,
+  "text": "1118772810 2005.06.14 R27-M0-N9-C:J12-U01 2005-06-14-11.13.30.870052 R27-M0-N9-C:J12-U01 RAS KERNEL FATAL special purpose registers:",
+  "label": "normal",
+  "group": "E115",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 281,
+  "text": "1118771934 2005.06.14 R24-M0-ND-C:J02-U11 2005-06-14-10.58.54.996783 R24-M0-ND-C:J02-U11 RAS KERNEL FATAL program interrupt: fp cr field .............0",
+  "label": "normal",
+  "group": "E99",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 292,
+  "text": "1118772602 2005.06.14 R21-M1-NA-C:J07-U01 2005-06-14-11.10.02.651943 R21-M1-NA-C:J07-U01 RAS KERNEL FATAL problem state (0=sup,1=usr).......0",
+  "label": "normal",
+  "group": "E97",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 104,
+  "text": "1118536327 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-17.32.07.581048 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt",
+  "label": "alert",
+  "group": "E55",
+  "kind": "alert"
+ },
+ {
+  "id": 217,
+  "text": "1118768070 2005.06.14 R24-M1-N7-C:J08-U01 2005-06-14-09.54.30.228119 R24-M1-N7-C:J08-U01 RAS KERNEL FATAL instruction address: 0x00004ed8",
+  "label": "normal",
+  "group": "E76",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1267,
+  "text": "1124519271 2005.08.19 R60-M1-N7-C:J16-U11 2005-08-19-23.27.51.734783 R60-M1-N7-C:J16-U11 RAS KERNEL INFO 1 ddr errors(s) detected and corrected on rank 0, symbol 10, bit 0",
+  "label": "normal",
+  "group": "E2",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1521,
+  "text": "1130529611 2005.10.28 R63-M1-N5-C:J17-U01 2005-10-28-13.00.11.719498 R63-M1-N5-C:J17-U01 RAS KERNEL FATAL Error receiving packet on tree network, expecting type 57 instead of type 3 (softheader=0064588e 8aff0003 00000002 00000000) PSR0=00001f01 PSR1=00000000 PRXF=00000002 PIXF=00000007",
+  "label": "alert",
+  "group": "E60",
+  "kind": "alert"
+ },
+ {
+  "id": 246,
+  "text": "1118770227 2005.06.14 R25-M1-N6-C:J15-U11 2005-06-14-10.30.27.419268 R25-M1-N6-C:J15-U11 RAS KERNEL FATAL program interrupt: privileged instruction...0",
+  "label": "normal",
+  "group": "E103",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1382,
+  "text": "1125692642 2005.09.02 R10-M1-N4-I:J18-U01 2005-09-02-13.24.02.308650 R10-M1-N4-I:J18-U01 RAS KERNEL FATAL Lustre mount FAILED : bglio136 : point /p/gb1",
+  "label": "alert",
+  "group": "E81",
+  "kind": "alert"
+ },
+ {
+  "id": 1785,
+  "text": "1132613769 2005.11.21 R66-M1-N8-I:J18-U01 2005-11-21-14.56.09.042983 R66-M1-N8-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:41587, Connection reset by peer",
+  "label": "alert",
+  "group": "E30",
+  "kind": "alert"
+ },
+ {
+  "id": 1511,
+  "text": "1129734520 2005.10.19 R17-M0-N0-I:J18-U01 2005-10-19-08.08.40.058960 R17-M0-N0-I:J18-U01 RAS KERNEL INFO shutdown complete",
+  "label": "normal",
+  "group": "E113",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1395,
+  "text": "1126267442 2005.09.09 R13-M0-N2-C:J09-U01 2005-09-09-05.04.02.346866 R13-M0-N2-C:J09-U01 RAS KERNEL INFO 1 torus receiver y+ input pipe error(s) (dcr 0x02ee) detected and corrected",
+  "label": "normal",
+  "group": "E9",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 288,
+  "text": "1118772150 2005.06.14 R24-M0-NC-C:J12-U11 2005-06-14-11.02.30.070774 R24-M0-NC-C:J12-U11 RAS KERNEL FATAL machine state register: 0x00002000",
+  "label": "normal",
+  "group": "E85",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 313,
+  "text": "1118774042 2005.06.14 R25-M1-N8-C:J03-U11 2005-06-14-11.34.02.588297 R25-M1-N8-C:J03-U11 RAS KERNEL FATAL disable store gathering..................0",
+  "label": "normal",
+  "group": "E59",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1232,
+  "text": "1123614572 2005.08.09 R00-M0-N6-C:J03-U11 2005-08-09-12.09.32.252222 R00-M0-N6-C:J03-U11 RAS KERNEL FATAL rts tree/torus link training failed: wanted: B C X+ X- Y+ Y- Z+ Z- got: B C X- Y- Z+ Z-",
+  "label": "normal",
+  "group": "E109",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 165,
+  "text": "1118699850 2005.06.13 R22-M0-NC-I:J18-U01 2005-06-13-14.57.30.126106 R22-M0-NC-I:J18-U01 RAS KERNEL INFO ciod: Message code 0 is not 51 or 4294967295",
+  "label": "normal",
+  "group": "E38",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1523,
+  "text": "1130675804 2005.10.30 R65-M1-NA-C:J14-U01 2005-10-30-04.36.44.005858 R65-M1-NA-C:J14-U01 RAS KERNEL INFO CE sym 27, at 0x1b70b860, mask 0x80",
+  "label": "normal",
+  "group": "E18",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 450,
+  "text": "1119806971 2005.06.26 R05-M1-N8-C:J15-U11 2005-06-26-10.29.31.819506 R05-M1-N8-C:J15-U11 RAS KERNEL INFO instruction address: 0x0062fe04",
+  "label": "normal",
+  "group": "E76",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 282,
+  "text": "1118771988 2005.06.14 R27-M0-N7-C:J02-U01 2005-06-14-10.59.48.153923 R27-M0-N7-C:J02-U01 RAS KERNEL FATAL force load/store alignment...............0",
+  "label": "normal",
+  "group": "E64",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 522,
+  "text": "1120231520 2005.07.01 UNKNOWN_LOCATION 2005-07-01-08.25.20.466953 UNKNOWN_LOCATION NULL DISCOVERY INFO Ido chip status changed: FF:F2:9F:16:E2:23:00:0D:60:E9:1D:DC ip=10.0.0.151 v=9 t=4 status=M Fri Jul 01 08:16:53 PDT 2005",
+  "label": "normal",
+  "group": "E73",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 621,
+  "text": "1120889703 2005.07.08 R05-M0-N2 2005-07-08-23.15.03.798449 R05-M0-N2 NULL DISCOVERY WARNING Node card is not fully functional",
+  "label": "normal",
+  "group": "E90",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1788,
+  "text": "1132853885 2005.11.24 R14-M0-N8-I:J18-U01 2005-11-24-09.38.05.459006 R14-M0-N8-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:41534, Link has been severed",
+  "label": "alert",
+  "group": "E32",
+  "kind": "alert"
+ },
+ {
+  "id": 824,
+  "text": "1121115819 2005.07.11 R04-M0-N1-C:J02-U01 2005-07-11-14.03.39.101778 R04-M0-N1-C:J02-U01 RAS KERNEL FATAL rts panic! - stopping execution",
+  "label": "alert",
+  "group": "E108",
+  "kind": "alert"
+ },
+ {
+  "id": 1258,
+  "text": "1124131896 2005.08.15 R40-M1-N0-I:J18-U11 2005-08-15-11.51.36.375271 R40-M1-N0-I:J18-U11 RAS KERNEL INFO ciod: Missing or invalid fields on line 1 of node map file /home/auselton/bgl/mapfiles/bgl.128mps.f64.map",
+  "label": "normal",
+  "group": "E39",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1518,
+  "text": "1130255740 2005.10.25 R11-M1-N2-C:J09-U11 2005-10-25-08.55.40.146416 R11-M1-N2-C:J09-U11 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x0b): warning for torus z- wire",
+  "label": "normal",
+  "group": "E45",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1378,
+  "text": "1125552643 2005.08.31 R25-M1-N4-I:J18-U01 2005-08-31-22.30.43.752965 R25-M1-N4-I:J18-U01 RAS KERNEL FATAL Lustre mount FAILED : bglio344 : point /p/gb1",
+  "label": "alert",
+  "group": "E81",
+  "kind": "alert"
+ },
+ {
+  "id": 301,
+  "text": "1118773618 2005.06.14 R25-M1-N7-C:J09-U11 2005-06-14-11.26.58.490506 R25-M1-N7-C:J09-U11 RAS KERNEL FATAL instruction address space.........0",
+  "label": "normal",
+  "group": "E75",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1217,
+  "text": "1123176466 2005.08.04 R71-M0-NC 2005-08-04-10.27.46.284345 R71-M0-NC NULL DISCOVERY ERROR Node card status: no ALERTs are active. Clock Mode is Low. Clock Select is Midplane. Phy JTAG Reset is asserted. ASIC JTAG Reset is asserted. Temperature Mask is not active. No temperature error. Temperature Limit Error Latch is clear. PGOOD IS NOT ASSERTED. PGOOD ERROR LATCH IS ACTIVE. MPGOOD IS NOT OK. MPGOOD ERROR LATCH IS ACTIVE. The 2.5 volt rail is OK. The 1.5 volt rail is OK.",
+  "label": "normal",
+  "group": "E92",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 152,
+  "text": "1118552875 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-22.07.55.838589 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt",
+  "label": "alert",
+  "group": "E55",
+  "kind": "alert"
+ },
+ {
+  "id": 296,
+  "text": "1118772927 2005.06.14 R27-M0-N6-C:J02-U11 2005-06-14-11.15.27.823191 R27-M0-N6-C:J02-U11 RAS KERNEL FATAL rts internal error",
+  "label": "normal",
+  "group": "E107",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 187,
+  "text": "1118765277 2005.06.14 R12-M0-N2-C:J11-U01 2005-06-14-09.07.57.162326 R12-M0-N2-C:J11-U01 RAS KERNEL FATAL data storage interrupt",
+  "label": "alert",
+  "group": "E52",
+  "kind": "alert"
+ },
+ {
+  "id": 129,
+  "text": "1118543955 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-19.39.15.873091 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt",
+  "label": "alert",
+  "group": "E55",
+  "kind": "alert"
+ },
+ {
+  "id": 219,
+  "text": "1118768111 2005.06.14 R20-M1-N7-C:J16-U01 2005-06-14-09.55.11.455484 R20-M1-N7-C:J16-U01 RAS KERNEL FATAL data address: 0x00000002",
+  "label": "normal",
+  "group": "E50",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1720,
+  "text": "1131525612 2005.11.09 R62-M0-N4-C:J13-U01 2005-11-09-00.40.12.350846 R62-M0-N4-C:J13-U01 RAS KERNEL FATAL program interrupt: privileged instruction...0",
+  "label": "normal",
+  "group": "E103",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 271,
+  "text": "1118771516 2005.06.14 R25-M0-N6-C:J14-U11 2005-06-14-10.51.56.234430 R25-M0-N6-C:J14-U11 RAS KERNEL FATAL program interrupt: imprecise exception......0",
+  "label": "normal",
+  "group": "E102",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1400,
+  "text": "1126526629 2005.09.12 R20-M1-N8-C:J13-U11 2005-09-12-05.03.49.910676 R20-M1-N8-C:J13-U11 RAS KERNEL INFO suppressing further interrupts of same type",
+  "label": "normal",
+  "group": "E117",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 445,
+  "text": "1119803805 2005.06.26 R36-M0-N9-C:J12-U01 2005-06-26-09.36.45.237515 R36-M0-N9-C:J12-U01 RAS KERNEL INFO program interrupt: imprecise exception......0",
+  "label": "normal",
+  "group": "E102",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 440,
+  "text": "1119803550 2005.06.26 R35-M0-NB-C:J16-U01 2005-06-26-09.32.30.029388 R35-M0-NB-C:J16-U01 RAS KERNEL INFO data store interrupt caused by icbi.........0",
+  "label": "normal",
+  "group": "E54",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1371,
+  "text": "1125225358 2005.08.28 R54-M0-NC-I:J18-U01 2005-08-28-03.35.58.673640 R54-M0-NC-I:J18-U01 RAS KERNEL INFO NFS Mount failed on bglio716, slept 15 seconds, retrying (1)",
+  "label": "normal",
+  "group": "E89",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 214,
+  "text": "1118768001 2005.06.14 R07-M1-N2-C:J05-U11 2005-06-14-09.53.21.013029 R07-M1-N2-C:J05-U11 RAS KERNEL FATAL data storage interrupt",
+  "label": "alert",
+  "group": "E52",
+  "kind": "alert"
+ },
+ {
+  "id": 446,
+  "text": "1119803856 2005.06.26 R02-M1-N4-C:J12-U01 2005-06-26-09.37.36.335874 R02-M1-N4-C:J12-U01 RAS KERNEL INFO program interrupt: imprecise exception......0",
+  "label": "normal",
+  "group": "E102",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 299,
+  "text": "1118773252 2005.06.14 R20-M1-N0-C:J10-U01 2005-06-14-11.20.52.106874 R20-M1-N0-C:J10-U01 RAS KERNEL FATAL debug wait enable.................0",
+  "label": "normal",
+  "group": "E58",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 947,
+  "text": "1121408299 2005.07.14 R23-M0-N0-I:J18-U01 2005-07-14-23.18.19.684786 R23-M0-N0-I:J18-U01 RAS KERNEL INFO ciod: Z coordinate 32 exceeds physical dimension 32 at line 33 of node map file /p/gb2/pakin1/contention-32768cpes-torus/xyzt-1x1x32768x1.map",
+  "label": "normal",
+  "group": "E42",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 435,
+  "text": "1119803084 2005.06.26 R36-M0-ND-C:J13-U11 2005-06-26-09.24.44.819150 R36-M0-ND-C:J13-U11 RAS KERNEL INFO program interrupt: illegal instruction......1",
+  "label": "normal",
+  "group": "E101",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 241,
+  "text": "1118769991 2005.06.14 R26-M0-NA-C:J04-U11 2005-06-14-10.26.31.242578 R26-M0-NA-C:J04-U11 RAS KERNEL FATAL data store interrupt caused by dcbf.........0",
+  "label": "normal",
+  "group": "E53",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 269,
+  "text": "1118771469 2005.06.14 R27-M1-N9-C:J03-U01 2005-06-14-10.51.09.848118 R27-M1-N9-C:J03-U01 RAS KERNEL FATAL data address space................0",
+  "label": "normal",
+  "group": "E49",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 320,
+  "text": "1118811393 2005.06.14 R02-M1-N0-C:J12-U11 2005-06-14-21.56.33.279265 R02-M1-N0-C:J12-U11 RAS KERNEL INFO instruction cache parity error corrected",
+  "label": "normal",
+  "group": "E77",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1758,
+  "text": "1132111278 2005.11.15 R57-M0-N8-C:J12-U01 2005-11-15-19.21.18.471861 R57-M0-N8-C:J12-U01 RAS KERNEL FATAL Error receiving packet on tree network, expecting type 57 instead of type 3 (softheader=009756d5 8bfa0003 00000002 00000000) PSR0=20021f01 PSR1=00000000 PRXF=00000002 PIXF=00000007",
+  "label": "alert",
+  "group": "E60",
+  "kind": "alert"
+ },
+ {
+  "id": 10,
+  "text": "1117869876 2005.06.04 R27-M1-N4-I:J18-U01 2005-06-04-00.24.36.222560 R27-M1-N4-I:J18-U01 RAS APP FATAL ciod: failed to read message prefix on control stream (CioStream socket to 172.16.96.116:33370",
+  "label": "alert",
+  "group": "E33",
+  "kind": "alert"
+ },
+ {
+  "id": 456,
+  "text": "1119807588 2005.06.26 R33-M1-N3-C:J16-U11 2005-06-26-10.39.48.944209 R33-M1-N3-C:J16-U11 RAS KERNEL INFO auxiliary processor.........................0",
+  "label": "normal",
+  "group": "E15",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 231,
+  "text": "1118769489 2005.06.14 R20-M0-N3-C:J06-U01 2005-06-14-10.18.09.061481 R20-M0-N3-C:J06-U01 RAS KERNEL FATAL instruction address: 0x00004ed8",
+  "label": "normal",
+  "group": "E76",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 284,
+  "text": "1118772057 2005.06.14 R24-M0-N2-C:J16-U11 2005-06-14-11.00.57.941787 R24-M0-N2-C:J16-U11 RAS KERNEL FATAL machine state register: 0x00002000",
+  "label": "normal",
+  "group": "E85",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 290,
+  "text": "1118772337 2005.06.14 R24-M0-N7-C:J06-U01 2005-06-14-11.05.37.845720 R24-M0-N7-C:J06-U01 RAS KERNEL FATAL critical input interrupt enable...0",
+  "label": "normal",
+  "group": "E48",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1465,
+  "text": "1127780591 2005.09.26 R27-M0-NC-I:J18-U11 2005-09-26-17.23.11.155275 R27-M0-NC-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to 172.16.96.116:34903: Link has been severed",
+  "label": "alert",
+  "group": "E29",
+  "kind": "alert"
+ },
+ {
+  "id": 32,
+  "text": "1117984246 2005.06.05 R30-M1-N3-C:J02-U01 2005-06-05-08.10.46.344235 R30-M1-N3-C:J02-U01 RAS KERNEL FATAL force load/store alignment...............0",
+  "label": "normal",
+  "group": "E64",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1513,
+  "text": "1129820611 2005.10.20 R01-M1-NC-I:J18-U01 2005-10-20-08.03.31.975086 R01-M1-NC-I:J18-U01 RAS APP FATAL ciod: Error loading /bgl/apps/followup/RAPTOR/new.raptor.trace: invalid or missing program image, Exec format error",
+  "label": "normal",
+  "group": "E25",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1379,
+  "text": "1125593559 2005.09.01 R14-M1-N7-C:J10-U01 2005-09-01-09.52.39.403870 R14-M1-N7-C:J10-U01 RAS KERNEL INFO 4 ddr errors(s) detected and corrected on rank 0, symbol 29, bit 4",
+  "label": "normal",
+  "group": "E2",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 137,
+  "text": "1118548457 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-20.54.17.510380 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt",
+  "label": "alert",
+  "group": "E55",
+  "kind": "alert"
+ },
+ {
+  "id": 1980,
+  "text": "1134626183 2005.12.14 R74-M1-N0-C:J12-U01 2005-12-14-21.56.23.782819 R74-M1-N0-C:J12-U01 RAS KERNEL INFO 5 ddr error(s) detected and corrected on rank 0, symbol 28 over 2946 seconds",
+  "label": "normal",
+  "group": "E1",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 242,
+  "text": "1118769993 2005.06.14 R20-M0-N4-C:J15-U01 2005-06-14-10.26.33.758477 R20-M0-N4-C:J15-U01 RAS KERNEL FATAL machine check: i-fetch......................0",
+  "label": "normal",
+  "group": "E84",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 258,
+  "text": "1118771007 2005.06.14 R27-M0-N2-C:J12-U11 2005-06-14-10.43.27.316459 R27-M0-N2-C:J12-U11 RAS KERNEL FATAL floating point instr. enabled.....1",
+  "label": "normal",
+  "group": "E62",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1392,
+  "text": "1126202752 2005.09.08 R01-M1-N4-I:J18-U11 2005-09-08-11.05.52.800796 R01-M1-N4-I:J18-U11 RAS KERNEL FATAL Lustre mount FAILED : bglio23 : point /p/gb1",
+  "label": "alert",
+  "group": "E81",
+  "kind": "alert"
+ },
+ {
+  "id": 225,
+  "text": "1118768357 2005.06.14 R25-M0-N3-C:J13-U11 2005-06-14-09.59.17.720736 R25-M0-N3-C:J13-U11 RAS KERNEL FATAL machine check: i-fetch......................0",
+  "label": "normal",
+  "group": "E84",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 256,
+  "text": "1118771001 2005.06.14 R25-M0-N8-C:J16-U11 2005-06-14-10.43.21.406138 R25-M0-N8-C:J16-U11 RAS KERNEL FATAL data store interrupt caused by icbi.........0",
+  "label": "normal",
+  "group": "E54",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1245,
+  "text": "1123914727 2005.08.12 R55-M1-N0-I:J18-U11 2005-08-12-23.32.07.413454 R55-M1-N0-I:J18-U11 RAS APP FATAL ciod: Error loading /bgl/apps/scaletest/performance/MINIBEN/mb_243_0810/allreduce.rts: invalid or missing program image, Exec format error",
+  "label": "normal",
+  "group": "E25",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 259,
+  "text": "1118771014 2005.06.14 R27-M1-NF-C:J03-U11 2005-06-14-10.43.34.293126 R27-M1-NF-C:J03-U11 RAS KERNEL FATAL floating point instr. enabled.....1",
+  "label": "normal",
+  "group": "E62",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1401,
+  "text": "1126539103 2005.09.12 R41-M1-N4-I:J18-U11 2005-09-12-08.31.43.214677 R41-M1-N4-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to 172.16.96.116:41304: Link has been severed",
+  "label": "alert",
+  "group": "E29",
+  "kind": "alert"
+ },
+ {
+  "id": 455,
+  "text": "1119807491 2005.06.26 R02-M0-N9-C:J06-U01 2005-06-26-10.38.11.390037 R02-M0-N9-C:J06-U01 RAS KERNEL INFO data store interrupt caused by dcbf.........0",
+  "label": "normal",
+  "group": "E53",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1279,
+  "text": "1124798068 2005.08.23 R50-M1-N0-I:J18-U11 2005-08-23-04.54.28.532357 R50-M1-N0-I:J18-U11 RAS APP FATAL ciod: LOGIN chdir(/home/germann2/BGL-demo) failed: No such file or directory",
+  "label": "normal",
+  "group": "E37",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 267,
+  "text": "1118771384 2005.06.14 R21-M1-N6-C:J13-U11 2005-06-14-10.49.44.238733 R21-M1-N6-C:J13-U11 RAS KERNEL FATAL byte ordering exception.....................0",
+  "label": "normal",
+  "group": "E16",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 253,
+  "text": "1118770918 2005.06.14 R24-M0-N5-C:J05-U01 2005-06-14-10.41.58.776391 R24-M0-N5-C:J05-U01 RAS KERNEL FATAL data store interrupt caused by icbi.........0",
+  "label": "normal",
+  "group": "E54",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 438,
+  "text": "1119803468 2005.06.26 R36-M1-ND-C:J16-U11 2005-06-26-09.31.08.715435 R36-M1-ND-C:J16-U11 RAS KERNEL INFO data store interrupt caused by dcbf.........0",
+  "label": "normal",
+  "group": "E53",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 103,
+  "text": "1118371064 2005.06.09 R00-M1-N6-C:J12-U01 2005-06-09-19.37.44.455502 R00-M1-N6-C:J12-U01 RAS KERNEL INFO generating core.12357",
+  "label": "normal",
+  "group": "E67",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 261,
+  "text": "1118771085 2005.06.14 R27-M1-ND-C:J09-U01 2005-06-14-10.44.45.851799 R27-M1-ND-C:J09-U01 RAS KERNEL FATAL machine check enable..............0",
+  "label": "normal",
+  "group": "E83",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1975,
+  "text": "1134496398 2005.12.13 R44-M0-N4-I:J18-U01 2005-12-13-09.53.18.260783 R44-M0-N4-I:J18-U01 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:56170, Link has been severed",
+  "label": "alert",
+  "group": "E32",
+  "kind": "alert"
+ },
+ {
+  "id": 1750,
+  "text": "1132021542 2005.11.14 R46-M1-N1-C:J02-U01 2005-11-14-18.25.42.152117 R46-M1-N1-C:J02-U01 RAS KERNEL FATAL Error receiving packet on tree network, expecting type 57 instead of type 3 (softheader=00ce22e8 e6200003 00000002 00000000) PSR0=20021f01 PSR1=00000000 PRXF=00000002 PIXF=00000007",
+  "label": "alert",
+  "group": "E60",
+  "kind": "alert"
+ },
+ {
+  "id": 1260,
+  "text": "1124167540 2005.08.15 R63-M0-N4-C:J16-U01 2005-08-15-21.45.40.395707 R63-M0-N4-C:J16-U01 RAS KERNEL FATAL rts: kernel terminated for reason 1004",
+  "label": "alert",
+  "group": "E111",
+  "kind": "alert"
+ },
+ {
+  "id": 1529,
+  "text": "1131030168 2005.11.03 R54-M1-N8-I:J18-U01 2005-11-03-07.02.48.152436 R54-M1-N8-I:J18-U01 RAS APP FATAL ciod: Error loading /g/g0/spelce1/HPCC_IBM/Urgent/COP/64K/RandomAccess.64R.rts: invalid or missing program image, Permission denied",
+  "label": "normal",
+  "group": "E26",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 279,
+  "text": "1118771917 2005.06.14 R24-M0-N2-C:J04-U01 2005-06-14-10.58.37.145331 R24-M0-N2-C:J04-U01 RAS KERNEL FATAL program interrupt: fp cr field .............0",
+  "label": "normal",
+  "group": "E99",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1031,
+  "text": "1121727746 2005.07.18 R00-M1-N5-C:J03-U11 2005-07-18-16.02.26.154455 R00-M1-N5-C:J03-U11 RAS KERNEL FATAL debug wait enable.................0",
+  "label": "normal",
+  "group": "E58",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1206,
+  "text": "1123043313 2005.08.02 UNKNOWN_LOCATION 2005-08-02-21.28.33.869729 UNKNOWN_LOCATION NULL DISCOVERY INFO New ido chip inserted into the database: FF:F2:9F:16:C4:C2:00:0D:60:E9:3B:3D ip=10.2.1.37 v=13 t=4",
+  "label": "normal",
+  "group": "E88",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 285,
+  "text": "1118772070 2005.06.14 R21-M1-N2-C:J10-U11 2005-06-14-11.01.10.339106 R21-M1-N2-C:J10-U11 RAS KERNEL FATAL machine state register: 0x00002000",
+  "label": "normal",
+  "group": "E85",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 302,
+  "text": "1118773741 2005.06.14 R21-M0-N9-C:J08-U01 2005-06-14-11.29.01.258503 R21-M0-N9-C:J08-U01 RAS KERNEL FATAL data address space................0",
+  "label": "normal",
+  "group": "E49",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 311,
+  "text": "1118773941 2005.06.14 R20-M1-NA-C:J04-U01 2005-06-14-11.32.21.174785 R20-M1-NA-C:J04-U01 RAS KERNEL FATAL disable store gathering..................0",
+  "label": "normal",
+  "group": "E59",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 436,
+  "text": "1119803149 2005.06.26 R01-M1-N0-C:J04-U11 2005-06-26-09.25.49.706431 R01-M1-N0-C:J04-U11 RAS KERNEL INFO program interrupt: illegal instruction......1",
+  "label": "normal",
+  "group": "E101",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 429,
+  "text": "1119736307 2005.06.25 R01-M1-N8-I:J18-U11 2005-06-25-14.51.47.575572 R01-M1-N8-I:J18-U11 RAS APP FATAL ciod: Error loading /home/glosli/src/ddcMD/ddcMD/1.1.13/ddcMDbglV: invalid or missing program image, No such file or directory",
+  "label": "normal",
+  "group": "E28",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 237,
+  "text": "1118769697 2005.06.14 R26-M0-N0-C:J02-U01 2005-06-14-10.21.37.752462 R26-M0-N0-C:J02-U01 RAS KERNEL FATAL program interrupt: illegal instruction......0",
+  "label": "normal",
+  "group": "E101",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1950,
+  "text": "1133913870 2005.12.06 R01-M0-N0-C:J04-U01 2005-12-06-16.04.30.188673 R01-M0-N0-C:J04-U01 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x17): warning for tree C1 wire, suppressing further interrupts of same type",
+  "label": "normal",
+  "group": "E47",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1220,
+  "text": "1123183618 2005.08.04 R76-M1-N4 2005-08-04-12.26.58.275812 R76-M1-N4 NULL DISCOVERY ERROR Node card status: no ALERTs are active. Clock Mode is Low. Clock Select is Midplane. Phy JTAG Reset is asserted. ASIC JTAG Reset is asserted. Temperature Mask is not active. No temperature error. Temperature Limit Error Latch is clear. PGOOD IS NOT ASSERTED. PGOOD ERROR LATCH IS ACTIVE. MPGOOD IS NOT OK. MPGOOD ERROR LATCH IS ACTIVE. The 2.5 volt rail is OK. The 1.5 volt rail is OK.",
+  "label": "normal",
+  "group": "E92",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1202,
+  "text": "1123025954 2005.08.02 R23-M0-N7 2005-08-02-16.39.14.159918 R23-M0-N7 NULL HARDWARE SEVERE NodeCard is not fully functional",
+  "label": "normal",
+  "group": "E94",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1776,
+  "text": "1132586451 2005.11.21 R26-M0-N0-I:J18-U11 2005-11-21-07.20.51.661738 R26-M0-N0-I:J18-U11 RAS KERNEL INFO MACHINE CHECK DCR read timeout (mc=e08x iar 0x00000000 lr 0xc00045a4)",
+  "label": "normal",
+  "group": "E82",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1733,
+  "text": "1131601567 2005.11.09 R51-M1-N4-C:J07-U01 2005-11-09-21.46.07.597381 R51-M1-N4-C:J07-U01 RAS KERNEL INFO 5 torus receiver z+ input pipe error(s) (dcr 0x02f0) detected and corrected",
+  "label": "normal",
+  "group": "E10",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 312,
+  "text": "1118774011 2005.06.14 R24-M0-NA-C:J14-U01 2005-06-14-11.33.31.835838 R24-M0-NA-C:J14-U01 RAS KERNEL FATAL disable store gathering..................0",
+  "label": "normal",
+  "group": "E59",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1799,
+  "text": "1133280774 2005.11.29 R55-M0-N9-C:J06-U11 2005-11-29-08.12.54.614554 R55-M0-N9-C:J06-U11 RAS KERNEL INFO 13 tree receiver 1 in re-synch state event(s) (dcr 0x0185) detected over 4562 seconds",
+  "label": "normal",
+  "group": "E14",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1960,
+  "text": "1134109056 2005.12.08 R64-M1-NC-I:J18-U01 2005-12-08-22.17.36.597185 R64-M1-NC-I:J18-U01 RAS APP FATAL ciod: Error loading /g/g90/glosli/src/ddcMD/ddcMD1.1.17/bin/ddcMDbglV: invalid or missing program image, No such file or directory",
+  "label": "normal",
+  "group": "E28",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1751,
+  "text": "1132062083 2005.11.15 R05-M0-NC-C:J04-U11 2005-11-15-05.41.23.201247 R05-M0-NC-C:J04-U11 RAS KERNEL INFO critical input interrupt (unit=0x0b bit=0x0a): warning for torus z+ wire, suppressing further interrupts of same type",
+  "label": "normal",
+  "group": "E46",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1990,
+  "text": "1135579635 2005.12.25 R62-M1-NA-C:J04-U01 2005-12-25-22.47.15.963417 R62-M1-NA-C:J04-U01 RAS KERNEL FATAL fpr29=0xffffffff ffffffff ffffffff ffffffff",
+  "label": "normal",
+  "group": "E65",
+  "kind": "hard_negative"
+ },
+ {
+  "id": 1963,
+  "text": "1134130421 2005.12.09 R34-M1-NB-C:J17-U11 2005-12-09-04.13.41.810977 R34-M1-NB-C:J17-U11 RAS KERNEL INFO total of 5 ddr error(s) detected and corrected over 9108 seconds",
+  "label": "normal",
+  "group": "E119",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 444,
+  "text": "1119803693 2005.06.26 R00-M1-N3-C:J11-U01 2005-06-26-09.34.53.251232 R00-M1-N3-C:J11-U01 RAS KERNEL INFO program interrupt: unimplemented operation..0",
+  "label": "normal",
+  "group": "E105",
+  "kind": "easy_negative"
+ },
+ {
+  "id": 1779,
+  "text": "1132609258 2005.11.21 R13-M1-N4-I:J18-U11 2005-11-21-13.40.58.052836 R13-M1-N4-I:J18-U11 RAS APP FATAL ciod: Error reading message prefix on CioStream socket to 172.16.96.116:52839, Connection reset by peer",
+  "label": "alert",
+  "group": "E30",
+  "kind": "alert"
+ },
+ {
+  "id": 1757,
+  "text": "1132111168 2005.11.15 R57-M0-NA-C:J13-U11 2005-11-15-19.19.28.379713 R57-M0-NA-C:J13-U11 RAS KERNEL FATAL rts: kernel terminated for reason 1004",
+  "label": "alert",
+  "group": "E111",
+  "kind": "alert"
+ },
+ {
+  "id": 1973,
+  "text": "1134357549 2005.12.11 R63-M1-N0-I:J18-U11 2005-12-11-19.19.09.737509 R63-M1-N0-I:J18-U11 RAS APP FATAL ciod: LOGIN chdir(/p/gb1/stella/RAPTOR/2183) failed: Input/output error",
+  "label": "alert",
+  "group": "E36",
+  "kind": "alert"
+ },
+ {
+  "id": 823,
+  "text": "1121115817 2005.07.11 R01-M0-N1-C:J09-U11 2005-07-11-14.03.37.675251 R01-M0-N1-C:J09-U11 RAS KERNEL FATAL rts panic! - stopping execution",
+  "label": "alert",
+  "group": "E108",
+  "kind": "alert"
+ },
+ {
+  "id": 1935,
+  "text": "1133638373 2005.12.03 R56-M0-NA-C:J15-U11 2005-12-03-11.32.53.165837 R56-M0-NA-C:J15-U11 RAS KERNEL INFO Kernel detected 35591540 integer alignment exceptions (35591533) iar 0x0023f108, dear 0x1feaa260 (35591534) iar 0x00265564, dear 0x1feaa1c0 (35591535) iar 0x00265574, dear 0x1feaa1e0 (35591536) iar 0x00265578, dear 0x1feaa200 (35591537) iar 0x00265588, dear 0x1feaa220 (35591538) iar 0x0026558c, dear 0x1feaa240 (35591539) iar 0x00265594, dear 0x1feaa260 (35591540) iar 0x00265598, dear 0x1feaa280",
+  "label": "normal",
+  "group": "E78",
+  "kind": "easy_negative"
+ }
+]

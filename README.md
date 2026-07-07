@@ -53,6 +53,10 @@ python3 ai-eval-sentiment/run_eval.py
 
 # 実API・独立モデルで再測定（要 FAL_KEY・数円〜数十円/モデル）
 FAL_KEY=<key> python3 ai-eval-sentiment/run_eval_realapi.py openai/gpt-4o-mini
+
+# 第2の実ドメイン：実スパコンログ(BGL)の障害トリアージA/B — 実データ・測定手順つき
+python3 ai-eval-logtriage/prepare_testset.py   # 取得→ゲート→リーク検査→層別抽出（結果はコミット済み）
+FAL_KEY=<key> python3 ai-eval-logtriage/run_eval_logtriage.py google/gemini-2.5-flash-lite
 ```
 
 ## テスト（検証ツール自身を検証する）
