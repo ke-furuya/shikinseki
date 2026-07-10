@@ -16,7 +16,7 @@
 |---|---|---|
 | ①取得 | [`data-harvester`](data-harvester/) | 壊れた/欠けたデータで分析を始めない（完全性ゲート） |
 | ②防御 | [`leak-guard`](leak-guard/) | 未来情報の混入（リーク）を止める |
-| ③**検証** | [`edge-validator`](edge-validator/) ⭐ | **「効いてる/まぐれ/測れない」を統計で判定（看板）** |
+| ③**検証** | [`edge-validator`](edge-validator/) ⭐ | **「効いてる/まぐれ/測れない」を統計で判定（中核）** |
 | ④運用 | [`action-gate`](action-gate/) | 出す結論を毎回同じ手順で機械チェックし、うっかり（重複・予算超過・矛盾）を仕組みで防ぐ |
 
 すべて **Python標準ライブラリのみ**（numpy/pandas不要＝どこでも動く）。各ツールは独立して使えるし、繋いでも使える。ドメイン非依存＝アダプタだけ書けば何にでも適用できる。名前の由来は**試金石**＝本物の金か"愚者の金（ノイズ）"かを見分ける石。
@@ -63,7 +63,7 @@ FAL_KEY=<key> python3 ai-eval-logtriage/run_eval_logtriage.py google/gemini-2.5-
 
 「本物か、まぐれか」を判定するツールが壊れていては本末転倒なので、
 **既知の答え・統計的性質で確認する回帰テスト62件**を用意している（標準ライブラリ `unittest` のみ・追加依存なし・CIで自動実行）。
-看板の統計関数（edge_validator）を最厚に、他の3層も**「止める」側の経路**——action-gate が不正アクションをブロックするか、
+中核の統計関数（edge_validator）を最も厚く、他の3層も**「止める」側の経路**——action-gate が不正アクションをブロックするか、
 完全性ゲートが欠損で FAIL を返すか、リーク検出が H/M/L?/L を正しく分級するか——を固定している。
 
 ```bash
@@ -77,7 +77,7 @@ PBO は純ノイズ戦略で高く・本物のエッジ1本で低く出ること
 「較正のfit集合が小さくてもbinの参照がずれない」「group不足でCIが退化しても"頑健"と偽らない」など、
 過去に自分で見つけたバグの再発防止テストも含む。
 
-## 看板機能（edge-validator）が答える問い
+## 中核機能（edge-validator）が答える問い
 
 - `roi_ci` / `mean_ci` — 価値・A/B差と、まぐれを除いた**信頼区間**（group単位ブートストラップ）
 - `power_required` / `power_required_mean` — その差を**証明するのに何件要るか**＝そもそも測れるのか（事前指定MDE）
@@ -145,7 +145,7 @@ N=110  B−A +7.3pp  90%CI +2.7〜+11.8pp → ✅ 良く見える（※ただし
 
 ```
 shikinseki/        パッケージ本体（4モジュール・pip install -e . で使える）
-  edge_validator.py   ③検証（看板）   data_harvester.py  ①取得
+  edge_validator.py   ③検証（中核）   data_harvester.py  ①取得
   leak_guard.py       ②防御           action_gate.py     ④運用
 tests/             回帰テスト62件（CIで自動実行）
 examples は各層のディレクトリ（edge-validator/ 等）に、実適用例は ai-eval-sentiment/ に。
