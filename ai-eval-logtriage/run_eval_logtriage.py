@@ -2,7 +2,7 @@
 """BGL実ログ障害トリアージ＝プロンプトA/B評価（試金石の第2実ドメイン適用）。
 
 問い：「SRE風の工夫プロンプトBは、素朴なAより本当に良いのか？ そして単純な
-キーワードルール（FATAL→alert・88%）に、LLMはそもそも勝てるのか？」
+キーワードルール（FATAL→alert・89.8%）に、LLMはそもそも勝てるのか？」
 
 使い方:
   export FAL_KEY=<your-fal-api-key>        # https://fal.ai で取得
@@ -49,7 +49,7 @@ testset = json.load(open(HERE / "testset.json"))
 
 
 def rule_baseline(item):
-    """超えるべき相手＝素朴なキーワードルール（severity FATAL → alert）。全体88%精度。"""
+    """超えるべき相手＝素朴なキーワードルール（severity FATAL → alert）。全2,000行で89.8%（1,796/2,000）。"""
     return "alert" if " FATAL " in item["text"] else "normal"
 
 
