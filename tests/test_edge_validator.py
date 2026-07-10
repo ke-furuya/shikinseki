@@ -76,7 +76,7 @@ class TestMeanCI(unittest.TestCase):
 
 
 class TestRoiCI(unittest.TestCase):
-    """看板 roi_ci のスモーク＋符号の妥当性。"""
+    """中核 roi_ci のスモーク＋符号の妥当性。"""
 
     def test_profitable_bets_positive_roi(self):
         # payoff>cost が続けば ROI>100（=利益）で頑健に正
@@ -292,7 +292,7 @@ class TestSharpeAndOverfit(unittest.TestCase):
 
 
 class TestHoldoutScan(unittest.TestCase):
-    """看板のsurvivor判定＝「本物の特徴は残り、ノイズは落ちる」を検証（従来は実行のみで未assert）。"""
+    """中核のsurvivor判定＝「本物の特徴は残り、ノイズは落ちる」を検証（従来は実行のみで未assert）。"""
 
     def _planted(self, rng):
         recs = []

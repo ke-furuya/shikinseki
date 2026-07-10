@@ -3,7 +3,7 @@
 4層スタック：
   data_harvester … 取得（壊れた/欠けたデータで分析を始めない）
   leak_guard     … 防御（未来情報リークを止める）
-  edge_validator … 検証（効いてる/まぐれ/測れないを統計判定）＝看板
+  edge_validator … 検証（効いてる/まぐれ/測れないを統計判定）＝中核
   action_gate    … 運用（決定論生成＋機械ゲートで人為ミスを防ぐ）
 
 依存：標準ライブラリのみ。使い方: `from shikinseki import edge_validator as ev`
