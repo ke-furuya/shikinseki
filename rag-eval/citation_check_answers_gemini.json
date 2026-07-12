@@ -1,0 +1,500 @@
+[
+  {
+    "id": "q01",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-s3-2017"
+    ],
+    "gold_docs": [
+      "pm-s3-2017"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q02",
+    "type": "factoid_cause",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-azure-2012"
+    ],
+    "gold_docs": [
+      "pm-azure-2012"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q03",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-circleci-pg-2021"
+    ],
+    "gold_docs": [
+      "pm-circleci-pg-2021"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q04",
+    "type": "factoid_cause",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-cloudflare-bgp-2022"
+    ],
+    "gold_docs": [
+      "pm-cloudflare-bgp-2022"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q05",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-allegro-2018"
+    ],
+    "gold_docs": [
+      "pm-allegro-2018"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q06",
+    "type": "factoid_cause",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-gce-bgp-2014"
+    ],
+    "gold_docs": [
+      "pm-gce-bgp-2014"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q07",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-dynamodb-2025"
+    ],
+    "gold_docs": [
+      "pm-dynamodb-2025"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q08",
+    "type": "factoid_cause",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-github-zk-2020"
+    ],
+    "gold_docs": [
+      "pm-github-zk-2020"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q09",
+    "type": "factoid_cause",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-stackoverflow-regex-2016"
+    ],
+    "gold_docs": [
+      "pm-stackoverflow-regex-2016"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q10",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-strava-pk-2014"
+    ],
+    "gold_docs": [
+      "pm-strava-pk-2014"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q11",
+    "type": "factoid_cause",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-stripe-2015"
+    ],
+    "gold_docs": [
+      "pm-stripe-2015"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q12",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-twilio-redis-2013"
+    ],
+    "gold_docs": [
+      "pm-twilio-redis-2013"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q13",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-incidentio-pgaudit-2025"
+    ],
+    "gold_docs": [
+      "pm-incidentio-pgaudit-2025"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q14",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-crowdstrike-2024"
+    ],
+    "gold_docs": [
+      "pm-crowdstrike-2024"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q15",
+    "type": "factoid_cause",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-reddit-k8s-2023"
+    ],
+    "gold_docs": [
+      "pm-reddit-k8s-2023"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q16",
+    "type": "cross_doc",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 2,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-basecamp-int-2018",
+      "pm-strava-pk-2014"
+    ],
+    "gold_docs": [
+      "pm-basecamp-int-2018",
+      "pm-strava-pk-2014"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q17",
+    "type": "cross_doc",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-gce-bgp-2014"
+    ],
+    "gold_docs": [
+      "pm-cloudflare-bgp-2022",
+      "pm-gce-bgp-2014"
+    ],
+    "precision": 1.0,
+    "recall": 0.5,
+    "citation_ok": true
+  },
+  {
+    "id": "q18",
+    "type": "cross_doc",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 3,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-cloudflare-bgp-2022",
+      "pm-github-dns-2014",
+      "pm-heroku-2016"
+    ],
+    "gold_docs": [
+      "pm-allegro-2018",
+      "pm-cloudflare-bgp-2022",
+      "pm-gce-bgp-2014",
+      "pm-heroku-2016"
+    ],
+    "precision": 0.667,
+    "recall": 0.5,
+    "citation_ok": false
+  },
+  {
+    "id": "q19",
+    "type": "cross_doc",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 2,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-dynamodb-2025",
+      "pm-github-dns-2014"
+    ],
+    "gold_docs": [
+      "pm-dynamodb-2025",
+      "pm-github-dns-2014"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q20",
+    "type": "cross_doc",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-github-zk-2020"
+    ],
+    "gold_docs": [
+      "pm-github-zk-2020"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q21",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-basecamp-int-2018"
+    ],
+    "gold_docs": [
+      "pm-basecamp-int-2018"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q22",
+    "type": "factoid_cause",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-github-dns-2014"
+    ],
+    "gold_docs": [
+      "pm-github-dns-2014"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q23",
+    "type": "factoid_cause",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-heroku-2016"
+    ],
+    "gold_docs": [
+      "pm-heroku-2016"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q24",
+    "type": "cross_doc",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 2,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-azure-2012",
+      "pm-stackoverflow-regex-2016"
+    ],
+    "gold_docs": [
+      "pm-azure-2012",
+      "pm-stackoverflow-regex-2016"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q25",
+    "type": "unanswerable",
+    "unanswerable": true,
+    "refused": true,
+    "n_cited": 0,
+    "citation_ok": true
+  },
+  {
+    "id": "q26",
+    "type": "unanswerable",
+    "unanswerable": true,
+    "refused": true,
+    "n_cited": 0,
+    "citation_ok": true
+  },
+  {
+    "id": "q27",
+    "type": "unanswerable",
+    "unanswerable": true,
+    "refused": true,
+    "n_cited": 0,
+    "citation_ok": true
+  },
+  {
+    "id": "q28",
+    "type": "cross_doc",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-cloudflare-bgp-2022"
+    ],
+    "gold_docs": [
+      "pm-cloudflare-bgp-2022",
+      "pm-crowdstrike-2024",
+      "pm-reddit-k8s-2023"
+    ],
+    "precision": 1.0,
+    "recall": 0.333,
+    "citation_ok": true
+  },
+  {
+    "id": "q29",
+    "type": "cause_and_fix",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-twilio-redis-2013"
+    ],
+    "gold_docs": [
+      "pm-twilio-redis-2013"
+    ],
+    "precision": 1.0,
+    "recall": 1.0,
+    "citation_ok": true
+  },
+  {
+    "id": "q30",
+    "type": "cross_doc",
+    "unanswerable": false,
+    "refused": false,
+    "n_cited": 1,
+    "out_of_range": 0,
+    "cited_docs": [
+      "pm-crowdstrike-2024"
+    ],
+    "gold_docs": [
+      "pm-crowdstrike-2024",
+      "pm-s3-2017"
+    ],
+    "precision": 1.0,
+    "recall": 0.5,
+    "citation_ok": true
+  }
+]

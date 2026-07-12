@@ -1,0 +1,252 @@
+{
+  "_gen": "gemini",
+  "_mode": "rag",
+  "_judge": "google/gemini-2.5-flash-lite",
+  "scores": [
+    {
+      "id": "q01",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the information in the retrieved document regarding the cause and resolution of the S3 outage, including the typo in the command and the subsequent restart and added safeguards."
+    },
+    {
+      "id": "q02",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately explains the cause of the outage and cites the correct document, but the citation is missing the specific passage number."
+    },
+    {
+      "id": "q03",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately summarizes the cause and fix of the outage, with a minor citation error as it only cites passage [1] when multiple passages might be relevant."
+    },
+    {
+      "id": "q04",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately identifies the root cause as an incorrect ordering of BGP advertised prefixes during a network change, which withdrew routes that should have remained active, aligning perfectly with the gold answer and the provided evidence. However, it cites '[1]' which is incorrect as there is no document numbered '1'."
+    },
+    {
+      "id": "q05",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the information in the provided text, correctly explaining the cause of the outage and the recommended preventative measures, and cites the appropriate source."
+    },
+    {
+      "id": "q06",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer correctly identifies the cause of the outage and cites the document, although the citation is not specific to the exact sentence explaining the BGP announcements."
+    },
+    {
+      "id": "q07",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately describes the race condition and mitigation from the retrieved evidence, but only cites one passage when the explanation is synthesized from multiple parts of the original document."
+    },
+    {
+      "id": "q08",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the gold answer and the retrieved evidence, citing the correct passage and covering all key points."
+    },
+    {
+      "id": "q09",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the cause of the outage by explaining the regex engine's backtracking and its effect on server health, and it correctly cites the relevant passage, though it misses some nuance from the gold answer's phrasing."
+    },
+    {
+      "id": "q10",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the information in the retrieved document and the gold answer, and correctly cites the source."
+    },
+    {
+      "id": "q11",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the information in the provided document regarding the cause and duration of the outage, but inaccurately attributes the failure of API requests as a direct consequence mentioned in the text."
+    },
+    {
+      "id": "q12",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer correctly identifies the cause of the duplicate charges and the fix, aligning with the gold answer and the retrieved evidence, although it only cites one passage for both parts of the answer."
+    },
+    {
+      "id": "q13",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately identifies the cause and resolution of the incident as described in the gold answer and correctly cites the relevant passage."
+    },
+    {
+      "id": "q14",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the information in the provided passage, correctly identifying the cause of the BSOD and the mitigation steps, and cites the relevant passage."
+    },
+    {
+      "id": "q15",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer correctly identifies the cause of the outage and supports it with evidence, but the citation number is incorrect."
+    },
+    {
+      "id": "q16",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately identifies both incidents and the remedy, with all claims supported by the provided citations."
+    },
+    {
+      "id": "q17",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": [
+        1
+      ],
+      "coverage": 1,
+      "reason": "The answer correctly identifies one outage caused by BGP routing/configuration problems, but misses the Cloudflare outage mentioned in the gold answer."
+    },
+    {
+      "id": "q18",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 1,
+      "coverage": 1,
+      "reason": "The answer hallucinates the GitHub DNS outage, which is not present in the retrieved documents, and misattributes the Google Compute Engine incident to GitHub. However, it correctly identifies the Heroku and Cloudflare incidents and their causes based on the provided evidence."
+    },
+    {
+      "id": "q19",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly identifies both DNS incidents and their corresponding citations, aligning perfectly with the gold answer and retrieved evidence."
+    },
+    {
+      "id": "q20",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the information in the retrieved document and the gold answer, and correctly cites the source."
+    },
+    {
+      "id": "q21",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately describes the cause and fix for Basecamp being in read-only mode, fully supported by the provided evidence and matching the gold answer's key points."
+    },
+    {
+      "id": "q22",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the cause of the GitHub DNS problems as described in the gold answer and the provided evidence, citing the correct passage. However, it misses mentioning the IP change as a contributing factor to the DNS state inconsistency."
+    },
+    {
+      "id": "q23",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is faithful and covers the key points of the gold answer, but the citation is only partially correct as it refers to a single passage when multiple passages in the document might support the answer."
+    },
+    {
+      "id": "q24",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": [
+        1,
+        1
+      ],
+      "coverage": 2,
+      "reason": "The answer accurately identifies both incidents mentioned in the gold answer and correctly attributes the negative impact to automated health or recovery systems reacting badly to initial failures, citing the relevant passages for each."
+    },
+    {
+      "id": "q25",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer accurately states that the provided documents do not contain the requested information, which aligns with the gold answer's expectation for this scenario, and thus achieves full coverage."
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the information requested, aligning with the gold answer's expectation and the lack of relevant data in the retrieved documents."
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the information, aligning with the gold answer's premise that the details of database corruption are absent. The coverage is high as it addresses the core of the question by indicating lack of information, which is what the gold answer implies is the correct approach."
+    },
+    {
+      "id": "q28",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 1,
+      "reason": "The answer correctly identifies the Cloudflare incident and mentions rolling back the change, but it misses the other two incidents mentioned in the gold answer and only partially cites the relevant evidence."
+    },
+    {
+      "id": "q29",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer correctly identifies the root cause and the reason why retries exacerbated the issue, citing the appropriate document but not the specific passage number."
+    },
+    {
+      "id": "q30",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 1,
+      "reason": "The answer correctly identifies staged/canary rollout as a practice to reduce blast radius and cites the CrowdStrike incident, but it misses the nuance that the remediation specifically included validation and a staged rollout. It also doesn't mention the S3 incident as additional support for slow capacity removal."
+    }
+  ]
+}

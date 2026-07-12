@@ -1,0 +1,14 @@
+【テスト1】Llama に “超短いJSON” を頼む（llama自体が生きてるか）
+    HTTP 200  output長=0文字  他キー=['reasoning', 'partial', 'error']
+    output(先頭300): ''
+
+【テスト2】Llama に “実際のjudgeプロンプト(長い+JSON)” を投げる
+    HTTP 200  output長=0文字  他キー=['reasoning', 'partial', 'error']
+    output(先頭300): ''
+
+【テスト3・比較】同じ長いプロンプトを Gemini に（プロンプト自体は正常か）
+    HTTP 200  output長=214文字  他キー=['reasoning', 'partial', 'error']
+    output(先頭300): '{"faithfulness": 2, "citation": 1, "coverage": 2, "reason": "The answer is faithful and covers the main point of the gold answer, but the citation is weak as it only references one source without specific detail."}'
+
+→ T1成功&T2空 なら『llamaは生きてるが長い採点+JSONに落ちる＝モデルの能力』
+  T1も空/エラーなら『fal側でllamaが応答しない＝API/モデル可用性』

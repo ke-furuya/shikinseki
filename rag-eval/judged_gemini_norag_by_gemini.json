@@ -1,0 +1,247 @@
+{
+  "_gen": "gemini",
+  "_mode": "_norag",
+  "_judge": "google/gemini-2.5-flash-lite",
+  "scores": [
+    {
+      "id": "q01",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The retrieved documents contain no information about the 2017 Amazon S3 outage, and the answer fabricates details about the cause and resolution."
+    },
+    {
+      "id": "q02",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly identifies that the provided documents do not contain the requested information, aligning with the gold answer's premise and the lack of retrieved evidence."
+    },
+    {
+      "id": "q03",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer introduces several unsubstantiated details not present in the gold answer or retrieved documents, such as a 'central build agent manager' and 'cascading failure', and it fails to mention the actual cause and fix described in the gold standard."
+    },
+    {
+      "id": "q04",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, and therefore accurately reflects the absence of a factual answer consistent with the GOLD answer and retrieved evidence (which is none)."
+    },
+    {
+      "id": "q05",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, and thus its faithfulness and coverage are maximal given the lack of evidence."
+    },
+    {
+      "id": "q06",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, and it is not applicable to score faithfulness, citation, or coverage as no retrieval occurred."
+    },
+    {
+      "id": "q07",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, and thus it is faithful, fully cited (implicitly by stating no docs apply), and covers the 'lack of information' aspect of the question."
+    },
+    {
+      "id": "q08",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the information is not available in the provided documents, thus exhibiting faithfulness and coverage despite no retrieved evidence."
+    },
+    {
+      "id": "q09",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the information is not present in the provided documents, which is the appropriate response when no evidence is retrieved."
+    },
+    {
+      "id": "q10",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the information, which is appropriate given no documents were retrieved. Coverage is excellent as it accurately reflects the situation where no information is available."
+    },
+    {
+      "id": "q11",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, and thus it is faithful and covers the lack of information. No citation is applicable as no documents were retrieved."
+    },
+    {
+      "id": "q12",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the information is not present in the provided documents, and there is no basis for citation or coverage."
+    },
+    {
+      "id": "q13",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not contain the requested information, which is a valid response when no retrieval occurs."
+    },
+    {
+      "id": "q14",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the retrieved documents do not contain the requested information, aligning with the fact that no documents were provided."
+    },
+    {
+      "id": "q15",
+      "type": "factoid_cause",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer provides a detailed explanation for the outage that is not supported by the retrieved evidence, which is none. The answer fabricates details about misconfiguration, cascading failure, faulty deployment, resource exhaustion, and connection disruptions, none of which are mentioned in the gold answer or evidence."
+    },
+    {
+      "id": "q16",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the information is not present in the provided documents and thus has full faithfulness and coverage, but lacks citations as expected for a no-retrieval scenario."
+    },
+    {
+      "id": "q17",
+      "type": "cross_doc",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer fabricates outage details and does not mention the outages listed in the gold answer, nor does it draw from any provided evidence."
+    },
+    {
+      "id": "q18",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the information is not present in the provided documents and therefore does not attempt to answer the question, fulfilling the faithfulness requirement. However, since no documents were retrieved, citation and coverage are not applicable."
+    },
+    {
+      "id": "q19",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, which is accurate given no documents were retrieved. It fulfills the faithfulness criteria for no-retrieval by not fabricating information and the coverage and citation criteria by acknowledging the lack of information."
+    },
+    {
+      "id": "q20",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, which aligns with the no-retrieval scenario and the gold answer's premise."
+    },
+    {
+      "id": "q21",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, which aligns with the fact that no documents were retrieved. Therefore, faithfulness and coverage are maximal, and citation is zero as no sources are available."
+    },
+    {
+      "id": "q22",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, and no retrieval was performed."
+    },
+    {
+      "id": "q23",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, thus it is faithful and covers the lack of information. Citation is not applicable in this case."
+    },
+    {
+      "id": "q24",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the information is not present in the provided documents, and thus has perfect faithfulness. However, it fails to cover any aspect of the gold answer and cannot provide citations due to the lack of retrieved evidence."
+    },
+    {
+      "id": "q25",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, aligning with the gold standard and demonstrating faithfulness and full coverage."
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the requested information, aligning with the gold answer's expectation for a no-retrieval scenario."
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the information is not present in the documents, aligning with the gold answer's premise correction and the lack of retrieved evidence."
+    },
+    {
+      "id": "q28",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the information is not present in the provided documents, and therefore avoids hallucination. It also fully covers the intent of the question by acknowledging the lack of information."
+    },
+    {
+      "id": "q29",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer incorrectly identifies the cause of the incident and does not mention the role of retries in exacerbating the problem, nor does it explain why retries made it worse as requested by the question. All information is fabricated as no documents were retrieved."
+    },
+    {
+      "id": "q30",
+      "type": "cross_doc",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer completely hallucinates the incident number and claims a practice not supported by the provided (lack of) evidence, failing to address the core question about reducing blast radius through staged rollouts and validation."
+    }
+  ]
+}

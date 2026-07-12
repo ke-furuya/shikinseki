@@ -1,0 +1,247 @@
+{
+  "_gen": "gemini",
+  "_mode": "rag",
+  "_judge": "anthropic/claude-3.5-sonnet",
+  "scores": [
+    {
+      "id": "q01",
+      "type": "cause_and_fix",
+      "faithfulness": 1,
+      "citation": 2,
+      "coverage": 1,
+      "reason": "The answer contains a minor unsupported detail, stating the outage was triggered by an error during debugging of a billing subsystem, which is not mentioned in the gold answer."
+    },
+    {
+      "id": "q02",
+      "type": "factoid_cause",
+      "faithfulness": 1,
+      "citation": 2,
+      "coverage": 1,
+      "reason": "The answer correctly cites the retrieved document [1], but incorrectly states that February 29, 2013 does not exist, and partially incorrectly describes the cause of the outage"
+    },
+    {
+      "id": "q03",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "Faithfulness is 2 because the answer accurately describes the cause and fix of the CircleCI outage, citation is 0 because the answer cites [1] but there is no such citation in the retrieved documents, and coverage is 2 because the answer captures the key points of the gold answer."
+    },
+    {
+      "id": "q04",
+      "type": "factoid_cause",
+      "faithfulness": 1,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer captures the correct root cause of the Cloudflare outage but contains a minor unsupported detail about increasing resilience, implying the cause was a mistake to achieve that goal."
+    },
+    {
+      "id": "q05",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly captures the key points of the gold answer, but incorrectly attributes the citations [1] which does not appear in the gold answer or evidence."
+    },
+    {
+      "id": "q06",
+      "type": "factoid_cause",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer contains minor unsupported detail with a wrong citation."
+    },
+    {
+      "id": "q07",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately explains the race condition and its causes, matching the gold answer in detail, and provides correct citations to support its claims."
+    },
+    {
+      "id": "q08",
+      "type": "factoid_cause",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer's claim is generally faithful to the gold answer, but the provided citation is missing, and the minor detail 'two distinct ZooKeeper clusters' is unsupported."
+    },
+    {
+      "id": "q09",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer accurately captures the key points of the gold answer, but fails to provide any evidence citations."
+    },
+    {
+      "id": "q10",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "Answer accurately summarizes the gold response and correctly identifies the solution to the upload failure, but citations do not specify the correct evidence to support the fix."
+    },
+    {
+      "id": "q11",
+      "type": "factoid_cause",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer incorrectly includes 'resulting in API requests failing' which is not present in the gold answer, and lacks a correct citation which is present in the retrieved evidence."
+    },
+    {
+      "id": "q12",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "Answer accurately captures the key points, but partially wrong citations and missing details that only appear in the gold answer."
+    },
+    {
+      "id": "q13",
+      "type": "cause_and_fix",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer claims the PGAudit extension ignored timeout signals, but this detail is not supported by any of the provided evidence."
+    },
+    {
+      "id": "q14",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer mentions incorrect and specific details about the event and its mitigation that are not supported by any of the retrieved documents."
+    },
+    {
+      "id": "q15",
+      "type": "factoid_cause",
+      "faithfulness": 1,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "Answer is mostly faithful to the gold answer, but omits 'between Kubernetes versions', and misattributes the specific impact to 'pod networking, specifically the Calico route reflector selection', which is not mentioned in the gold answer, but the Calico route reflector is not explicitly mentioned in the gold answer either, the key points of the gold are still captured."
+    },
+    {
+      "id": "q16",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the gold answer, citing correct sources and remedies, and captures the key points of the gold answer."
+    },
+    {
+      "id": "q17",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 2,
+      "coverage": 0,
+      "reason": "Minor unsupported detail: the answer omits the Cloudflare outage."
+    },
+    {
+      "id": "q18",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer incorrectly includes a GitHub DNS outage, which is not mentioned in the provided evidence, and also contains minor unsupported details"
+    },
+    {
+      "id": "q19",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is faithful to the gold answer, but only partially correct citations, and correctly captures the key points."
+    },
+    {
+      "id": "q20",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately describes the GitHub ZooKeeper incident and provides correct citations and detailed explanation, matching the key points of the gold answer."
+    },
+    {
+      "id": "q21",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately captures the key points from the gold answer, including the cause of the problem and the solution, but citations are only partially correct since the outgoing reference in the evidence is not provided."
+    },
+    {
+      "id": "q22",
+      "type": "factoid_cause",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer contains a minor unsupported detail ('stale or inconsistent DNS state' vs 'inconsistent DNS state') and does not provide any citations to supporting passages."
+    },
+    {
+      "id": "q23",
+      "type": "factoid_cause",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer contains a clear factual error/hallucination by implying there's a supporting passage [1] that does not exist."
+    },
+    {
+      "id": "q24",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately captures the key points of the gold answer, but partly wrong in citing 'Azure leap-year certificate outage' instead of 'Azure 2012 leap-year outage'."
+    },
+    {
+      "id": "q25",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer accurately stated that the information is not available in the documents, but failed to capture any key points about the gold answer."
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not contain the specified information and cites correctly (in this case, to indicate absence of evidence)."
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the provided documents do not contain the information, but it does not attempt to provide any additional context or clarify why the premise is faulty, and provides no evidence to back its claim."
+    },
+    {
+      "id": "q28",
+      "type": "cross_doc",
+      "faithfulness": 0,
+      "citation": 2,
+      "coverage": 0,
+      "reason": "The answer is factually incorrect, as the question asked for incidents resolved by rolling back or reverting a change, but the answer only mentions one specific incident (Cloudflare BGP outage) and creates a clear factual error (rolling back is mentioned but the intervention was actually a correction of a change and prefix ordering in the configuration)."
+    },
+    {
+      "id": "q29",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "Answer falsely claims retries made the issue worse by mentioning 'did' in addition to the actual cause of duplicate charges, citation format is incorrect and no evidence provided"
+    },
+    {
+      "id": "q30",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer incorrectly cited 'The CrowdStrike Falcon global BSOD incident' which was not mentioned in the gold answer, and missed the detail about staging and validator in the crowdstrike incident."
+    }
+  ]
+}

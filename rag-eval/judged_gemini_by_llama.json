@@ -1,0 +1,246 @@
+{
+  "_gen": "gemini",
+  "_judge": "meta-llama/llama-3.2-3b-instruct",
+  "scores": [
+    {
+      "id": "q01",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q02",
+      "type": "factoid_cause",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q03",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q04",
+      "type": "factoid_cause",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q05",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q06",
+      "type": "factoid_cause",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q07",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q08",
+      "type": "factoid_cause",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q09",
+      "type": "factoid_cause",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q10",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q11",
+      "type": "factoid_cause",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q12",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q13",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q14",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q15",
+      "type": "factoid_cause",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q16",
+      "type": "cross_doc",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q17",
+      "type": "cross_doc",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q18",
+      "type": "cross_doc",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q19",
+      "type": "cross_doc",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q20",
+      "type": "cross_doc",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q21",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q22",
+      "type": "factoid_cause",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q23",
+      "type": "factoid_cause",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q24",
+      "type": "cross_doc",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q25",
+      "type": "unanswerable",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q28",
+      "type": "cross_doc",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q29",
+      "type": "cause_and_fix",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    },
+    {
+      "id": "q30",
+      "type": "cross_doc",
+      "faithfulness": null,
+      "citation": null,
+      "coverage": null,
+      "reason": "parse_fail"
+    }
+  ]
+}

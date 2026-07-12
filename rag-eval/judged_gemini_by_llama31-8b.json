@@ -1,0 +1,247 @@
+{
+  "_gen": "gemini",
+  "_mode": "rag",
+  "_judge": "meta-llama/llama-3.1-8b-instruct",
+  "scores": [
+    {
+      "id": "q01",
+      "type": "cause_and_fix",
+      "faithfulness": 1,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer introduces an unrelated error during billing subsystem debugging, and the subsystem mentioned in the gold answer was not 'billing subsystem'."
+    },
+    {
+      "id": "q02",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "Answer accurately captures the key points of the GOLD answer, but missed specific details, and incorrectly includes out-of-scope information."
+    },
+    {
+      "id": "q03",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer does not mention the bug was fixed by scaling, only that the offending field was ignored and the schema change process was corrected."
+    },
+    {
+      "id": "q04",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately captures the root cause of the outage and correctly cites the relevant document, and covers the key points of the gold answer."
+    },
+    {
+      "id": "q05",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "Omits section numbers for a hollow citation; however, the answer/plain cover the key points of the gold answer accurately."
+    },
+    {
+      "id": "q06",
+      "type": "factoid_cause",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer accurately captures the key points of the gold answer, but lacks appropriate citations."
+    },
+    {
+      "id": "q07",
+      "type": "cause_and_fix",
+      "faithfulness": 1,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer is generally accurate but includes minor unsupported details (e.g. \"preventing the system from automatically applying further updates\" is not explicitly mentioned in the gold answer), and the citations are correct."
+    },
+    {
+      "id": "q08",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately represents the gold answer, but the citation is partially wrong as it only cites one passage number instead of potentially two."
+    },
+    {
+      "id": "q09",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer accurately captures the key points of the gold answer, but does not provide any supporting citations."
+    },
+    {
+      "id": "q10",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately mirrors the gold answer, including the specific details of the database table hitting the signed integer limit and the solution involving a schema migration to a larger integer type."
+    },
+    {
+      "id": "q11",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately describes the root cause of the 2015 Stripe API outage, citing the correct details about the manual operation, dependency, and duration of the outage. The citation is also accurate."
+    },
+    {
+      "id": "q12",
+      "type": "cause_and_fix",
+      "faithfulness": 1,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer captures the key points of the gold answer about the reason for the erroneous charges and the fix, but unclear/unspecified which specific document(s) provide the information."
+    },
+    {
+      "id": "q13",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly describes the cause and resolution of the incident.io outage in January 2025, but fails to properly cite the evidence."
+    },
+    {
+      "id": "q14",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "Answer matches the gold answer closely, but the score could be a 2 on citation if [1] referenced a passage in the documents."
+    },
+    {
+      "id": "q15",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The retrieved answer accurately conveys the cause of the outage, but incorrectly attributes it to a 'critical Kubernetes cluster upgrade' which is not mentioned in the gold answer."
+    },
+    {
+      "id": "q16",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "Answer correctly identifies the incidents and remedy without contradicting the gold answer or fabricating information, with accurate citations to supporting passages."
+    },
+    {
+      "id": "q17",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 1,
+      "reason": "The answer partially matches the gold answer but only mentions one outage, whereas the gold answer mentions two outages. The answer is mostly faithful in its description of the Google Compute Engine outage but does not cite any evidence, and a small comment number is mentioned."
+    },
+    {
+      "id": "q18",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer contradicts the gold answer by incorrectly attributing the GitHub DNS outage and failing to mention the other incidents, Google Compute Engine (2014, a bad autogenerated config) and Allegro (2018, a cluster resource-management misconfiguration blocked scaling)."
+    },
+    {
+      "id": "q19",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is mostly accurate, but incorrectly includes 'a failure in DNS' in the explanation and cites only one of the two incidents correctly."
+    },
+    {
+      "id": "q20",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reproduces the details of the GitHub ZooKeeper incident, including the cause of the problem and the consequences of the leader-election and split-brain issue. Correct citations [1] match the format and passage numbers of the provided documentation."
+    },
+    {
+      "id": "q21",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer accurately describes the cause and fix for the issue, but fails to provide any actual citations for the retrieved documents."
+    },
+    {
+      "id": "q22",
+      "type": "factoid_cause",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly states the cause of the GitHub DNS problem but has minor missing details and no citations."
+    },
+    {
+      "id": "q23",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer captures the key points of the gold answer, but does not provide any citations."
+    },
+    {
+      "id": "q24",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer includes the correct key points of the gold answer but does not provide citations to support it. It also incorrectly states that the Stack Overflow incident was caused by a regex ReDoS (the gold answer states it was because health checks timed out)."
+    },
+    {
+      "id": "q25",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer accurately reflects that the gold answer states the knowledge base does not contain information about the outage, and it does not invent details."
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer matches the gold standard perfectly and correctly cites no supporting passage."
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 0,
+      "reason": "Correct premise correction and accurate claim about the documents, but misses the point of the question entirely"
+    },
+    {
+      "id": "q28",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 1,
+      "coverage": 0,
+      "reason": "The answer only mentions one incident to support the claim, but the gold answer mentions three incidents, including the CrowdStrike and Reddit 2023 incidents which are not mentioned in the retrieved evidence."
+    },
+    {
+      "id": "q29",
+      "type": "cause_and_fix",
+      "faithfulness": 1,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states the root cause (network partition) but lacks details about the write operation being idempotent (charge operation not being idempotent) and the fix (making transactions idempotent)."
+    },
+    {
+      "id": "q30",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer's citations are incorrect. It only cites [1] instead of [1 and 2], and it does not correctly cite the specifics of the incidents."
+    }
+  ]
+}

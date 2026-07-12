@@ -1,0 +1,247 @@
+{
+  "_gen": "gemini",
+  "_mode": "rag",
+  "_judge": "openai/gpt-4o",
+  "scores": [
+    {
+      "id": "q01",
+      "type": "cause_and_fix",
+      "faithfulness": 1,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer closely aligns with the gold answer but incorrectly adds a 'billing subsystem' during debugging which isn't mentioned in the gold/evidence and only partially cites correctly."
+    },
+    {
+      "id": "q02",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the key details about the invalid certificate date causing the outage, but it lacks a correct citation for supporting documents."
+    },
+    {
+      "id": "q03",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer is faithful and covers all key points but does not use the correct citation format."
+    },
+    {
+      "id": "q04",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately captures the root cause of the outage, cites the correct passage, and aligns well with the gold answer and provided evidence."
+    },
+    {
+      "id": "q05",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is faithful to the gold, provides a correct explanation and prevention strategy, but partially cites as the specific passage numbers are not identified."
+    },
+    {
+      "id": "q06",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is factually accurate, fully covers the gold answer but only partially cites the document."
+    },
+    {
+      "id": "q07",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer accurately describes the race condition and mitigation but lacks proper citation."
+    },
+    {
+      "id": "q08",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is faithful to the retrieved information and covers the key points, but the citation is partially wrong or missing passages."
+    },
+    {
+      "id": "q09",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is faithful and covers the key points of the gold, but cites without specific passage numbers."
+    },
+    {
+      "id": "q10",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer aligns with the gold, but cites a partially incorrect set of document IDs."
+    },
+    {
+      "id": "q11",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is faithful to the gold answer with minor citation deficiencies and covers the key points of the issue in the Stripe API outage."
+    },
+    {
+      "id": "q12",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the gold answer by explaining the cause of the charges and the fix, with correct citations and all key points covered."
+    },
+    {
+      "id": "q13",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the cause and resolution of the outage as stated in the gold answer, with correct citations."
+    },
+    {
+      "id": "q14",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer correctly identifies the cause, impact resolution, and improvements made but partially lacks specific citation details."
+    },
+    {
+      "id": "q15",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately describes the cause of Reddit's outage, mentions the critical change, and cites correctly but with specificities that might not be fully captured in the retrieved document titles."
+    },
+    {
+      "id": "q16",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly identifies the incidents, describes the cause and remedy, and cites the appropriate documents."
+    },
+    {
+      "id": "q17",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 1,
+      "reason": "The answer correctly identifies the Google Compute Engine BGP outage but misses the Cloudflare outage and partially cites the document."
+    },
+    {
+      "id": "q18",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 1,
+      "coverage": 1,
+      "reason": "The ANSWER gets Heroku and Cloudflare correct but introduces GitHub which contradicts the Gold and misses Google Compute Engine and Allegro; also, it misses some retrieved evidence and lacks full relevant citations."
+    },
+    {
+      "id": "q19",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately reflects the incidents, appropriately cites the documents, and includes the key details from the gold answer."
+    },
+    {
+      "id": "q20",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately describes the GitHub ZooKeeper incident, fully aligns with the gold answer, and includes the correct detailed citation."
+    },
+    {
+      "id": "q21",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is faithful to the gold answer, covers the necessary details, but only partially cites the supporting documents."
+    },
+    {
+      "id": "q22",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is faithful and matches the main details of the gold answer, but the citation is partially missing as the document ID does not have numbered passages specified."
+    },
+    {
+      "id": "q23",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer is factually correct, closely matches the gold answer, but the citation is only partially correct because the document ID does not specify page numbers."
+    },
+    {
+      "id": "q24",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately describes both incidents and correctly cites both relevant documents."
+    },
+    {
+      "id": "q25",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states the documents do not contain information about the Facebook outage, matching the gold answer perfectly."
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not provide the revenue or financial-loss figure, matching the gold answer."
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states the documents do not contain the information, which aligns with the lack of database corruption described in the gold answer."
+    },
+    {
+      "id": "q28",
+      "type": "cross_doc",
+      "faithfulness": 0,
+      "citation": 1,
+      "coverage": 0,
+      "reason": "The answer incorrectly focuses only on Cloudflare, omitting other incidents mentioned in the gold answer and lacks citation of all relevant documents."
+    },
+    {
+      "id": "q29",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 1,
+      "coverage": 2,
+      "reason": "The answer accurately describes the root cause and effect of the retry issue with partial citation."
+    },
+    {
+      "id": "q30",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 1,
+      "coverage": 1,
+      "reason": "The answer accurately mentions staged rollout and the CrowdStrike incident but lacks context and specifics featured in the gold answer."
+    }
+  ]
+}

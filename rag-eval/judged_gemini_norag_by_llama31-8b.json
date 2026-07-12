@@ -1,0 +1,247 @@
+{
+  "_gen": "gemini",
+  "_mode": "_norag",
+  "_judge": "meta-llama/llama-3.1-8b-instruct",
+  "scores": [
+    {
+      "id": "q01",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 2,
+      "coverage": 0,
+      "reason": "The answer contradicts the gold answer in several key points, including the cause of the outage (typo vs faulty software update, incorrect power-save mode) and the resolution method (restart vs distributed system rollback)"
+    },
+    {
+      "id": "q02",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": "none",
+      "coverage": 0,
+      "reason": "The answer correctly states that the information is not present in the provided documents."
+    },
+    {
+      "id": "q03",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer claims a 'combination of factors', 'configuration change on a central build agent manager', 'cascading failure', and incorrect solution (rolling back and reintroducing the config change) that are all not supported by the gold answer or any evidence (since there isn't any)."
+    },
+    {
+      "id": "q04",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "Answer correctly states that the gold answer is not in the retrieved documents, but does not score higher in coverage as it does not provide any answer"
+    },
+    {
+      "id": "q05",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer faithfully states that the information is not in the documents, which is correct, but does not attempt to address the question of why the site went down or how it could be prevented."
+    },
+    {
+      "id": "q06",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 0,
+      "reason": "The answer accurately states that the answer is not in the provided documents and gives the correct reason."
+    },
+    {
+      "id": "q07",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer accurately states that the information is not contained in the documents, which is correct given there are no retrieved documents to evaluate."
+    },
+    {
+      "id": "q08",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the information is not contained in the provided documents, but does not provide any relevant information about the incident."
+    },
+    {
+      "id": "q09",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "No-retrieval baseline, no retrieved documents to cite."
+    },
+    {
+      "id": "q10",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the information is not in the documents, but does not address the actual question about the cause and fix."
+    },
+    {
+      "id": "q11",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the information is not in the provided documents, but this is not a substantial contribution to the question, thus receiving 0 for coverage."
+    },
+    {
+      "id": "q12",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer accurately reflects that there is no information in the documents, so it can only score 2 in faithfulness, and scores 0 in the other categories due to lack of evidence to support the answer."
+    },
+    {
+      "id": "q13",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer is accurate but the lack of citations and coverage scores are low because the answer does not actually engage with the task, simply stating that the documents do not contain the information."
+    },
+    {
+      "id": "q14",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer stated that the provided documents do not contain the information, which is correct given there is no retrieval."
+    },
+    {
+      "id": "q15",
+      "type": "factoid_cause",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer contains a false and unfounded claim about a faulty deployment of a new Kubernetes control plane component, which has no basis in the retrieved-documents or the gold answer."
+    },
+    {
+      "id": "q16",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately states that the information is not in the documents, and provides a conclusion with no citations."
+    },
+    {
+      "id": "q17",
+      "type": "cross_doc",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The retrieved answer fabricates two outages not mentioned in the gold answer and fails to specify which actual outages were caused by BGP routing/configuration problems."
+    },
+    {
+      "id": "q18",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer is correct in stating that the documents do not contain the information, but the retrieval-augmented answer does not acknowledge any incident or provide any relevant detail."
+    },
+    {
+      "id": "q19",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer provides a partial explanation but fails to actually answer the question about specific incidents that involved a failure in DNS, and does not cite any evidence."
+    },
+    {
+      "id": "q20",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "Answer is correct in stating the documents do not contain the information, which is the only justification for a faithfulness of 2 in this case. However, it does not provide any information about the question, contributing to a coverage score of 0."
+    },
+    {
+      "id": "q21",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the information, so it cannot fabricate or add incorrect information."
+    },
+    {
+      "id": "q22",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the information is not found in the documents, but does not address the question about the cause of the GitHub DNS problems in 2014."
+    },
+    {
+      "id": "q23",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "Answer indicates no information in the documents, but does not get to the answer, and provides no citation."
+    },
+    {
+      "id": "q24",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer is accurate given the lack of retrieval, but fails to capture any relevant information and does not provide any citations."
+    },
+    {
+      "id": "q25",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 0,
+      "reason": "Answer accurately states that the information is not available in the provided documents."
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer is faithful because it directly says the documents do not contain the information, which is accurate. Both faithfulness and coverage are score 2 because the answer is correct and complete. Citation is also 2 because it appears to be citing the fact that there is no document retrieved within the baseline scenario."
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "Corrects the premise of the question and accurately states that the provided documents do not contain the information."
+    },
+    {
+      "id": "q28",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "Answer states that the documents do not contain the required information, which is correct, but offers no supporting evidence or citations."
+    },
+    {
+      "id": "q29",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer inaccurately identifies the cause of the 2013 Twilio incident as an S3 failure, when the gold answer specifies it was a Redis network partition. Additionally, it misstates the effect of retries, which the gold answer correctly attributes to the non-idempotent charge operation, not an overwhelming surge of traffic."
+    },
+    {
+      "id": "q30",
+      "type": "cross_doc",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer does not match the gold answer and there are no retrieved documents to support it."
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "_gen": "gemini",
+  "_mode": "_norag",
+  "_judge": "openai/gpt-4o-mini",
+  "scores": [
+    {
+      "id": "q01",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer contains multiple factual errors, including the cause and resolution of the outage, and does not cite any evidence."
+    },
+    {
+      "id": "q02",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly states that the documents do not contain the information, but it only partially captures the reason behind the outage."
+    },
+    {
+      "id": "q03",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer contains clear factual errors and misattributes the cause and fix of the outage."
+    },
+    {
+      "id": "q04",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the documents do not contain the information, but does not address the key point about the root cause of the Cloudflare outage."
+    },
+    {
+      "id": "q05",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the documents do not contain the information, but it does not address key points about the cause or prevention."
+    },
+    {
+      "id": "q06",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the documents do not contain the information, but it does not address the specifics of the outage as in the gold answer."
+    },
+    {
+      "id": "q07",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly states that the documents do not contain the information, but it only partially captures the essence of the gold answer without addressing the race condition or mitigation details."
+    },
+    {
+      "id": "q08",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not contain the information, aligning with the gold answer."
+    },
+    {
+      "id": "q09",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly states that the documents do not contain the information, but it does not capture the main point about the regex engine's backtracking implementation."
+    },
+    {
+      "id": "q10",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the documents do not contain the requested information but fails to address any specifics from the gold answer."
+    },
+    {
+      "id": "q11",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly states that the documents do not contain the information, but it only partially captures the key details of what went wrong."
+    },
+    {
+      "id": "q12",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not contain the information, achieving the highest faithfulness score."
+    },
+    {
+      "id": "q13",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly states that the documents do not contain the information, but it does not address the specific points of the gold answer about the outage's cause and resolution."
+    },
+    {
+      "id": "q14",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly states that the documents do not contain the information, but it does not capture the key points from the gold answer."
+    },
+    {
+      "id": "q15",
+      "type": "factoid_cause",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer describes a misconfiguration causing resource exhaustion while the gold answer specifies an issue with node metadata format changes affecting pod networking, leading to a factual error."
+    },
+    {
+      "id": "q16",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not contain the relevant information."
+    },
+    {
+      "id": "q17",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer mentions routing/configuration problems and provides examples, but lacks specific details from the Gold answer and does not cite relevant evidence."
+    },
+    {
+      "id": "q18",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the documents do not contain the information, demonstrating faithfulness, but it neither cites any passages nor addresses the key examples from the gold answer."
+    },
+    {
+      "id": "q19",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer accurately states that the documents do not contain the information and does not fabricate any details."
+    },
+    {
+      "id": "q20",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly states that the documents do not contain the information, but it only partially addresses the key point of the gold answer regarding the specific incident."
+    },
+    {
+      "id": "q21",
+      "type": "cause_and_fix",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer correctly states that the documents do not contain the information but fails to address the key points of the gold answer."
+    },
+    {
+      "id": "q22",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 2,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not contain the information, satisfying the criteria for faithfulness, citation, and coverage."
+    },
+    {
+      "id": "q23",
+      "type": "factoid_cause",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the provided documents do not contain the information, aligning with the gold answer."
+    },
+    {
+      "id": "q24",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly indicates that the documents do not contain the information, but it fails to mention the specific incidents from the gold answer."
+    },
+    {
+      "id": "q25",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not contain information about the Facebook October 2021 outage."
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not provide the financial loss figure, adhering to the gold answer's implication."
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 2,
+      "reason": "The answer correctly states that the documents do not contain information about a database, aligning with the gold answer's clarification of the incident."
+    },
+    {
+      "id": "q28",
+      "type": "cross_doc",
+      "faithfulness": 2,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer correctly states that the documents do not contain the required information but only partially captures the essence of the gold answer."
+    },
+    {
+      "id": "q29",
+      "type": "cause_and_fix",
+      "faithfulness": 0,
+      "citation": 0,
+      "coverage": 0,
+      "reason": "The answer contains a clear factual error, incorrectly attributing the incident to Amazon S3 rather than Redis, and fails to cite any supporting passages."
+    },
+    {
+      "id": "q30",
+      "type": "cross_doc",
+      "faithfulness": 1,
+      "citation": 0,
+      "coverage": 1,
+      "reason": "The answer mentions a phased rollout but lacks detail and specific incident context, and it incorrectly references an incident without proper documentation."
+    }
+  ]
+}
